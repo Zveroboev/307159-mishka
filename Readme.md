@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Зверобоев](https://up.htmlacademy.ru/adaptive/11/user/307159).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Безуглый](https://github.com/shalfey41).
 
 ---
 
