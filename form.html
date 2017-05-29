@@ -45,14 +45,14 @@
       <p class="to-order__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru/" class="to-order__form form">
         <div class="form__type type">
-          <p class="form__legend">Тип</p>
+          <h3 class="form__legend">Тип</h3>
           <input class="type__inner" type="radio" name="type" id="type-1" value="type-1" checked>
           <label class="type__label" for="type-1">Аксессуа для интерьера</label> <!--Здесь и далее не добавляю "особые" классы к подписям, а делаю их одинаковыми т.к. все подписи в каждой подкатегории формы стилизованы одинаково. Если понадобится стилизовать что-либо отдельно - добавлю класс-->
           <input class="type__inner" type="radio" name="type" id="type-2" value="type-2">
           <label class="type__label" for="type-2">Детская игрушка</label>
         </div>
         <div class="form__color color">
-          <p class="form__legend">Цвет</p>
+          <h3 class="form__legend">Цвет</h3>
           <input type="checkbox" class="color__inner" name="white" id="white" checked>
           <label class="color__label" for="white">Белый</label>
           <input type="checkbox" class="color__inner" name="gray" id="gray" checked>
@@ -67,7 +67,7 @@
           <label class="color__label" for="orange">Оранжевый</label>
         </div>
         <div class="form__full-name full-name">
-          <p class="form__legend">ФИО</p>
+          <h3 class="form__legend">ФИО</h3>
           <label for="name" class="full-name__label">Имя:</label>
           <input type="text" class="full-name__name" name="name" id="name" required placeholder="Введите ваше имя*" autocomplete="on" tabindex="1">
           <label for="surname" class="full-name__label">Фамилия:</label>
@@ -76,15 +76,15 @@
           <input type="text" class="full-name__patronymic" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" autocomplete="on">
         </div>
         <div class="form__phone phone">
-          <p class="form__legend">Тел</p>
+          <h3 class="form__legend">Тел</h3>
           <input type="tel" class="phone__number" name="tel" required placeholder="+7 XXX XXX XX XX*" tabindex="3" pattern="(\+?\d[- .]*){7,13}">
         </div>
         <div class="form__e-mail e-mail">
-          <p class="form__legend">E-mail</p>
+          <h3 class="form__legend">E-mail</h3>
           <input type="email" class="e-mail__adress" name="e-mail" required placeholder="Ваш Email*" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="on" tabindex="4">
         </div>
         <div class="form__add add">
-          <p class="form__legend">Доп</p>
+          <h3 class="form__legend">Доп</h3>
           <textarea name="add-info" cols="30" rows="10" class="add__to-order">Опишите все ваши пожелания к заказу</textarea>
         </div>
         <span class="form__note"><sup>*</sup>Поля обязательны для заполнения</span>
