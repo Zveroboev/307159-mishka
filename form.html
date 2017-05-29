@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка/Форма</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <h1 class="page-header__title">Mishka - Милые штуки ручной работы для дома</h1>
+        <div class="header-logo">
+          <a class="header-logo__link" href="index.html">
+            <img src="#" alt="Mishka">
+          </a>
+        </div>
+        <div class="main-nav">
+          <span class="main-nav__toggler"></span>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="#">Главная</a></li>
+              <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+              <li class="main-nav__item main-nav__item--active"><a href="#">Вязание на заказ</a></li>
+            </ul>
+          <div class="main-nav__user">
+            <div class="main-nav__search-button main-nav__search-button--active">
+              <form action="https://echo.htmlacademy.ru/" class="main-nav__search-form">
+                <input class="main-nav__search" type="search" placeholder="Поиск">
+              </form>
+            </div>
+            <div class="main-nav__basket">
+              <a class="" href="#" title="Корзина"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="to-order">
+    <div class="to-order__wrapper">
+      <h2 class="to-order__title">Вязание на заказ</h2>
+      <p class="to-order__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru/" class="to-order__form form">
+        <fieldset class="form__type type">
+          <legend class="form__legend">Тип</legend>
+          <input class="type__inner" type="radio" name="type" id="type-1" value="type-1" checked>
+          <label class="type__label" for="type-1">Аксессуа для интерьера</label> <!--Здесь и далее не добавляю "особые" классы к подписям, а делаю их одинаковыми т.к. все подписи в каждой подкатегории формы стилизованы одинаково. Если понадобится стилизовать что-либо отдельно - добавлю класс-->
+          <input class="type__inner" type="radio" name="type" id="type-2" value="type-2">
+          <label class="type__label" for="type-2">Детская игрушка</label>
+        </fieldset>
+        <fieldset class="form__color color">
+          <legend class="form__legend">Цвет</legend>
+          <input type="checkbox" class="color__inner" name="white" id="white" checked>
+          <label for="white">Белый</label>
+          <input type="checkbox" class="color__inner" name="gray" id="gray" checked>
+          <label for="gray">Серый</label>
+          <input type="checkbox" class="color__inner" name="tiffane" id="tiffane">
+          <label for="tiffane">&#171;Тиффани&#187;</label>
+          <input type="checkbox" class="color__inner" name="black" id="black">
+          <label for="black">Черный</label>
+          <input type="checkbox" class="color__inner" name="pink" id="pink">
+          <label for="pink">Розовый</label>
+          <input type="checkbox" class="color__inner" name="orange" id="orange">
+          <label for="orange">Оранжевый</label>
+        </fieldset>
+        <fieldset class="form__full-name full-name">
+          <legend class="form__legend">ФИО</legend>
+          <label for="name" class="full-name__label">Имя:</label>
+          <input type="text" class="full-name__name" name="name" id="name" required placeholder="Введите ваше имя*" autocomplete="on" tabindex="1">
+          <label for="surname" class="full-name__label">Фамилия:</label>
+          <input type="text" class="full-name__surname" name="surname" id="surname" required placeholder="Укажите фамилию*" autocomplete="on" tabindex="2">
+          <label for="patronymic" class="full-name__label">Отчество:</label>
+          <input type="text" class="full-name__patronymic" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" autocomplete="on">
+        </fieldset>
+        <fieldset class="form__phone phone">
+          <legend class="form__legend">Тел</legend>
+          <input type="tel" class="phone__number" name="tel" required placeholder="+7 XXX XXX XX XX*" tabindex="3" pattern="(\+?\d[- .]*){7,13}">
+        </fieldset>
+        <fieldset class="form__e-mail e-mail">
+          <legend class="form__legend">E-mail</legend>
+          <input type="email" class="e-mail__adress" name="e-mail" required placeholder="Ваш Email*" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="on" tabindex="4">
+        </fieldset>
+        <fieldset class="form__add add">
+          <legend class="form__legend">Доп</legend>
+          <textarea name="add-info" cols="30" rows="10" class="add__to-order">Опишите все ваши пожелания к заказу</textarea>
+        </fieldset>
+        <span class="form__note"><sup>*</sup>Поля обязательны для заполнения</span>
+        <input type="submit" class="form__submit btn" value="Отправить заказ">
+      </form>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="footer-social">
+        <a href="#" class="footer-social__item footer-social__item--vk">Мы в Вконтакте</a>
+        <a href="#" class="footer-social__item footer-social__item--fb">Мы в Фейсбуке</a>
+        <a href="#" class="footer-social__item footer-social__item--in">Мы в Инстаграмме</a>
+      </div>
+      <div class="footer-copyright">
+        <span class="footer-copyright__text">Разработано:</span>
+        <a href="https://htmlacademy.ru/" class="footer-copyright__link">
+          <img src="#" alt="HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
