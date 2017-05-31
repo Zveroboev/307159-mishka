@@ -1,0 +1,25 @@
+.item__photo {
+  background-color: $bg-color;
+}
+
+.item__name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.item__descr {
+  font-size: 13px;
+  line-height: 30px;
+  color: $text-color;
+  display: block;
+  border-bottom: 1px solid $green-color;
+}
+
+.item__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  display: block;
+}
