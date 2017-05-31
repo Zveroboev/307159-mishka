@@ -1,0 +1,15 @@
+.promo {
+  background-color: #fcfcfc;
+  background-image: url('/img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  .promo__link-1-wrapper {
+    background-color: $green-color;
+  }
+
+  .promo__link-2-wrapper {
+    background-color: #56c3b2;
+  }
+}
+

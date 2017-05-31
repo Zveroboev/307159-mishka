@@ -1,0 +1,37 @@
+.theme__page-title {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $title-color;
+  text-align: center;
+}
+
+.theme__promo-link-wrapper {
+  height: 103px;
+  width: 100%;
+}
+
+.theme__promo-link-title {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.theme__section-title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $title-color;
+  text-align: left;
+}
+
+.theme__about-item {
+  list-style-type:none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $title-color;
+  padding-top: 70px;
+  position: relative;
+}

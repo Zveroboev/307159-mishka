@@ -1,0 +1,11 @@
+.main-nav__item {
+  list-style-type: none;
+}
+
+.main-nav__item-link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $title-color;
+}
