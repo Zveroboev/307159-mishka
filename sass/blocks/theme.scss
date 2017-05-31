@@ -1,3 +1,7 @@
+.theme_wrapper-page-title {
+  background-color: $bg-color;
+}
+
 .theme__page-title {
   font-size: 27px;
   line-height: 30px;
@@ -34,4 +38,12 @@
   color: $title-color;
   padding-top: 70px;
   position: relative;
+}
+
+.theme__form-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $green-color;
+  text-transform: uppercase;
 }
