@@ -1,0 +1,8 @@
+.adress-table__table-data {
+  font-size: 15px;
+  line-height: 30px;
+
+  &--underline {
+    border-bottom: 1px solid $green-color;
+  }
+}
