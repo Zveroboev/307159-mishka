@@ -1,0 +1,44 @@
+.theme {
+  width: 320px;
+  font-family: "Open Sans", sans-serif;
+  @include text-decoration();
+
+  .theme_wrapper-page-title {
+    background-color: $bg-color;
+  }
+  .theme__page-title {
+    @include text-decoration(27px, 30px);
+    font-weight: bold;
+    color: $black-color;
+    text-align: center;
+  }
+  .theme__promo-link-wrapper {
+    height: 103px;
+    width: 100%;
+  }
+  .theme__promo-link-title {
+    @include text-decoration(19px, 24px);
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  .theme__section-title {
+    @include text-decoration(25px, 30px);
+    color: $black-color;
+    text-align: left;
+  }
+  .theme__about-item {
+    @include text-decoration(17px, 20px);
+    list-style-type: none;
+    font-weight: bold;
+    color: $black-color;
+    padding-top: 70px;
+    position: relative;
+  }
+  .theme__form-title {
+    @include text-decoration(17px, 16px);
+    font-weight: bold;
+    color: $green-color;
+    text-transform: uppercase;
+  }
+}

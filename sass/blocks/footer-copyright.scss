@@ -1,0 +1,9 @@
+.footer-copyright__text {
+  @include text-decoration(19px, 18px);
+  font-weight: bold;
+  color: $black-color;
+}
+
+.footer-copyright__link {
+  color: $green-color;
+}

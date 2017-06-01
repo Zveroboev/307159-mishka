@@ -1,0 +1,10 @@
+.main-nav__item {
+  list-style-type: none;
+}
+
+.main-nav__item-link {
+  @include text-decoration(17px, 24px);
+  font-weight: bold;
+  text-decoration: none;
+  color: $black-color;
+}

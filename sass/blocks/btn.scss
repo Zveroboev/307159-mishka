@@ -1,0 +1,15 @@
+.btn {
+  @include text-decoration(17px, 20px);
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  height: 50px;
+  border: 2px solid $gray-color;
+  text-decoration: none;
+  color: $gray-color;
+  padding-top:13px;
+  text-align: center;
+}

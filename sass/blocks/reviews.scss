@@ -1,0 +1,15 @@
+.reviews__description {
+  @include text-decoration(15px, 30px);
+  color: $gray-color;
+}
+
+.reviews__author-name {
+  @include text-decoration(17px, 24px);
+  font-weight: bold;
+  color: $black-color;
+  font-style: normal;
+}
+
+.reviews__author-mail {
+  @include text-decoration(17px, 30px);
+}
