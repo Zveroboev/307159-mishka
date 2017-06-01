@@ -3,7 +3,6 @@
 }
 
 .production-process__discr {
-  font-size: 13px;
-  line-height: 24px;
-  color: $text-color;
+  @include text-decoration(13px, 24px);
+  color: $gray-color;
 }

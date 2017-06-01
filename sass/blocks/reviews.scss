@@ -1,18 +1,15 @@
 .reviews__description {
-  font-size: 15px;
-  line-height: 30px;
-  color: $text-color;
+  @include text-decoration(15px, 30px);
+  color: $gray-color;
 }
 
 .reviews__author-name {
-  font-size: 17px;
-  line-height: 24px;
+  @include text-decoration(17px, 24px);
   font-weight: bold;
-  color: $title-color;
+  color: $black-color;
   font-style: normal;
 }
 
 .reviews__author-mail {
-  font-size: 17px;
-  line-height: 30px;
+  @include text-decoration(17px, 30px);
 }

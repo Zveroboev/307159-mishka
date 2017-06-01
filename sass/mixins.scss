@@ -2,5 +2,10 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-  color: $title-color;
+  color: $black-color;
+}
+
+@mixin text-decoration ($fonts-size: 16px, $lient-height: 27px){
+  font-size: $fonts-size;
+  line-height: $lient-height;
 }

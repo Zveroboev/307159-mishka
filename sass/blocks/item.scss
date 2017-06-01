@@ -3,23 +3,20 @@
 }
 
 .item__name {
-  font-size: 17px;
-  line-height: 24px;
+  @include text-decoration(17px, 24px);
   font-weight: bold;
   display: block;
 }
 
 .item__descr {
-  font-size: 13px;
-  line-height: 30px;
-  color: $text-color;
+  @include text-decoration(13px, 30px);
+  color: $gray-color;
   display: block;
   border-bottom: 1px solid $green-color;
 }
 
 .item__price {
-  font-size: 15px;
-  line-height: 24px;
+  @include text-decoration(15px, 24px);
   font-weight: bold;
   display: block;
 }

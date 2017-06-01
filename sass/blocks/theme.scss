@@ -3,10 +3,9 @@
 }
 
 .theme__page-title {
-  font-size: 27px;
-  line-height: 30px;
+  @include text-decoration(27px, 30px);
   font-weight: bold;
-  color: $title-color;
+  color: $black-color;
   text-align: center;
 }
 
@@ -16,33 +15,29 @@
 }
 
 .theme__promo-link-title {
+  @include text-decoration(19px, 24px);
   text-decoration: none;
   color: #fff;
-  font-size: 19px;
-  line-height: 24px;
   font-weight: bold;
 }
 
 .theme__section-title {
-  font-size: 25px;
-  line-height: 30px;
-  color: $title-color;
+  @include text-decoration(25px, 30px);
+  color: $black-color;
   text-align: left;
 }
 
 .theme__about-item {
+  @include text-decoration(17px, 20px);
   list-style-type:none;
-  font-size: 17px;
-  line-height: 20px;
   font-weight: bold;
-  color: $title-color;
+  color: $black-color;
   padding-top: 70px;
   position: relative;
 }
 
 .theme__form-title {
-  font-size: 17px;
-  line-height: 16px;
+  @include text-decoration(17px, 16px);
   font-weight: bold;
   color: $green-color;
   text-transform: uppercase;

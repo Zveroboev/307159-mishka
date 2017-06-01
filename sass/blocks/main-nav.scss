@@ -3,9 +3,8 @@
 }
 
 .main-nav__item-link {
-  font-size: 17px;
-  line-height: 24px;
+  @include text-decoration(17px, 24px);
   font-weight: bold;
   text-decoration: none;
-  color: $title-color;
+  color: $black-color;
 }

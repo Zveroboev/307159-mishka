@@ -1,6 +1,5 @@
 .contacts__title {
-  font-size: 18px;
-  line-height: 30px;
+  @include text-decoration(18px, 30px);
   font-weight: bold;
 }
 
