@@ -1,21 +1,21 @@
-.item__photo {
+.catalog-item__photo {
   background-color: $bg-color;
 }
 
-.item__name {
+.catalog-item__name {
   @include text-decoration(17px, 24px);
   font-weight: bold;
   display: block;
 }
 
-.item__descr {
+.catalog-item__descr {
   @include text-decoration(13px, 30px);
   color: $gray-color;
   display: block;
   border-bottom: 1px solid $green-color;
 }
 
-.item__price {
+.catalog-item__price {
   @include text-decoration(15px, 24px);
   font-weight: bold;
   display: block;

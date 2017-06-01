@@ -19,14 +19,14 @@ body {
 @import "blocks/footer-copyright.scss";
 
 @import "blocks/catalog.scss";
-@import "blocks/item.scss";
+@import "blocks/catalog-item";
 @import "blocks/production-process.scss";
 
 @import "blocks/to-order.scss";
 @import "blocks/form.scss";
-@import "blocks/type.scss";
-@import "blocks/color.scss";
-@import "blocks/full-name.scss";
-@import "blocks/phone.scss";
-@import "blocks/e-mail.scss";
-@import "blocks/add.scss";
+@import "blocks/form-type.scss";
+@import "blocks/form-color.scss";
+@import "blocks/form-full-name.scss";
+@import "blocks/form-phone.scss";
+@import "blocks/form-e-mail.scss";
+@import "blocks/form-add.scss";
