@@ -3,60 +3,80 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/normalize.css">
 </head>
 <body class="theme">
 <header class="page-header">
-  <div class="page-header__wrapper">
+  <div class="page-header__wrapper theme__wrapper">
     <h1 class="page-header__title">Mishka - Милые штуки ручной работы для дома</h1>
-    <div class="header-logo">
-      <img src="/img/logo-mobile.svg" alt="Mishka" width="86" height="35">
-    </div>
-    <div class="main-nav">
-      <span class="main-nav__toggler"></span>
-      <nav class="main-nav__wrapper">
+    <ul class="header-top">
+      <li class="header-top__logo theme__header-top-inner">
+        <img class="header-top__logo-img" src="/img/logo-mobile.svg" alt="Mishka">
+      </li>
+      <li class="header-top__toggler theme__header-top-inner">
+        <img class="header-logo__toggler-img" src="/img/icon-menu-open.svg">
+      </li>
+      <li class="header-top__search theme__header-top-inner">
+        <form action="https://echo.htmlacademy.ru/" class="header-top__search-form">
+          <input class="header-top__search-input" type="search" placeholder="Поиск">
+        </form>
+      </li>
+      <li class="header-top__basket theme__header-top-inner">
+        <a class="header-top__basket-link" href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </div>
+    <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item search">
-            <input type="search" placeholder="Поиск по сайту" class="search__input">
-            <input type="submit" class="search__submit"> <!--Что бы при нажатии на лупу поиск так же осуществлялся-->
+            <div class="main-nav__item-wrapper theme__wrapper">
+              <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+            </div>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+            <div class="main-nav__item-wrapper theme__wrapper">
+              <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <div class="main-nav__item-wrapper theme__wrapper">
+              <input type="search" placeholder="Поиск по сайту" class="main-nav__item-input">
+            </div>
+          </li>
+          <li class="main-nav__item">
+            <div class="main-nav__item-wrapper theme__wrapper">
+              <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+            </div>
           </li>
         </ul>
-        <!--<div class="main-nav__user">-->
-        <!--<div class="main-nav__search-button main-nav__search-button&#45;&#45;active">-->
-        <!--<form action="https://echo.htmlacademy.ru/" class="main-nav__search-form">-->
-        <!--&lt;!&ndash;Форма поиска для десктопной версии&ndash;&gt;-->
-        <!--<input class="main-nav__search" type="search" placeholder="Поиск">-->
-        <!--</form>-->
-        <!--</div>-->
-        <!--<div class="main-nav__basket">-->
-        <!--<a class="" href="#" title="Корзина"></a>-->
-        <!--</div>-->
-        <!--</div>-->
-      </nav>
-    </div>
-  </div>
+    </nav>
 </header>
 <section class="promo">
-  <div class="promo__wrapper">
+  <nav class="promo__nav-wrapper theme__wrapper">
+    <ul class="promo__nav">
+      <li class="promo__nav-item">
+        <a href="catalog.html" class="promo__nav-link">Каталог товаров</a>
+      </li>
+      <li class="promo__nav-item">
+        <a href="form.html" class="promo__nav-link">Вязание на заказ</a>
+      </li>
+    </ul>
+    <span class="promo__info">Бесплатная доставка по России</span>
+  </nav>
+  <div class="promo__wrapper theme__wrapper">
     <h2 class="promo__title theme__page-title">Милые штуки ручной работы для дома</h2>
   </div>
   <div class="promo__link-1-wrapper theme__promo-link-wrapper">
-    <a href="#" class="promo__link-1 theme__promo-link-title">Предметы интерьера</a>
+    <a href="#" class="promo__link-1 theme__promo-link-title theme__wrapper">Предметы интерьера</a>
   </div>
   <div class="promo__link-2-wrapper theme__promo-link-wrapper">
-    <a href="#" class="promo__link-2 theme__promo-link-title">Детские игрушки</a>
+    <a href="#" class="promo__link-2 theme__promo-link-title theme__wrapper">Детские игрушки</a>
   </div>
 </section>
 <section class="week-item">
-  <div class="week-item__wrapper">
+  <div class="week-item__wrapper theme__wrapper">
     <h3 class="week-item__title theme__section-title">Вязаные корзинки</h3>
     <span class="week-item__info">Товар недели</span>
     <p class="week-item__discr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех
@@ -83,7 +103,7 @@
   </div>
 </section>
 <section class="about-us">
-  <div class="about-us__wrapper">
+  <div class="about-us__wrapper theme__wrapper">
     <h3 class="about-us__title theme__section-title">Коротко о нас:</h3>
     <ul class="about-us__discription">
       <li class="about-us__item1 theme__about-item">Экологически чистые материалы</li>
@@ -96,7 +116,7 @@
   </div>
 </section>
 <section class="reviews">
-  <div class="reviews__wrapper">
+  <div class="reviews__wrapper theme__wrapper">
     <h3 class="reviews__title theme__section-title">Отзывы</h3>
     <div class="reviews__slider slider">
       <blockquote class="reviews__item slider__item">
@@ -127,7 +147,7 @@
   </div>
 </section>
 <section class="contacts">
-  <div class="contacts__wrapper">
+  <div class="contacts__wrapper theme__wrapper">
     <h4 class="contacts__title">Контакты</h4>
     <table class="contacts__adress-table adress-table">
       <tr class="adress-table__table-row">
@@ -139,12 +159,14 @@
         <td class="adress-table__table-data">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
       </tr>
     </table>
+  </div>
     <div class="contacts__map"></div>
-    <a class="contacts_write-us btn" href="#">Напишите нам</a>
+  <div class="div contacts__btn-wrapper theme__wrapper">
+    <a class="contacts__write-us btn" href="#">Напишите нам</a>
   </div>
 </section>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__wrapper theme__wrapper">
     <div class="footer-social">
       <a href="#" class="footer-social__item footer-social__item--vk">Мы в Вконтакте</a>
       <a href="#" class="footer-social__item footer-social__item--fb">Мы в Фейсбуке</a>

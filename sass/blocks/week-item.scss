@@ -1,3 +1,7 @@
+.week-item__title {
+  margin: 0;
+}
+
 .week-item__info {
   @include text-decoration(17px, 20px);
   font-weight: bold;
