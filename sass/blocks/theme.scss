@@ -2,7 +2,6 @@
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   @include text-decoration();
-  @include container();
 
   .theme__wrapper {
     @include wrapper();
@@ -39,6 +38,7 @@
   }
 
   .theme__promo-link-wrapper {
+    @include container();
     height: 103px;
     width: 100%;
   }

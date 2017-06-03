@@ -1,12 +1,18 @@
-.contacts__title {
-  @include text-decoration(18px, 30px);
-  font-weight: bold;
+.contacts {
+  @include container();
+
+  .contacts__title {
+    @include text-decoration(18px, 30px);
+    font-weight: bold;
+  }
+
+  .contacts__map {
+    background-image: url("/img/map-mobile@1x.jpg");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 457px;
+    width: 320px;
+  }
 }
 
-.contacts__map {
-  background-image: url("/img/map-mobile@1x.jpg");
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  height: 457px;
-  width: 320px;
-}
+

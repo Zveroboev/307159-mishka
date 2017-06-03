@@ -1,29 +1,35 @@
-.week-item__title {
-  margin: 0;
+.week-item {
+  @include container();
+
+  .week-item__title {
+    margin: 0;
+  }
+
+  .week-item__info {
+    @include text-decoration(17px, 20px);
+    font-weight: bold;
+    color: $green-color;
+    text-transform: uppercase;
+  }
+
+  .week-item__discr {
+    @include text-decoration(15px, 24px);
+    color: $gray-color;
+
+  }
+
+  .week-item__table-data {
+    @include text-decoration(17px, 20px);
+    color: $gray-color;
+  }
+
+  .week-item__price {
+    @include text-decoration(17px, 24px);
+    font-weight: bold;
+    color: $gray-color;
+    text-align: center;
+    display: block;
+  }
+
 }
 
-.week-item__info {
-  @include text-decoration(17px, 20px);
-  font-weight: bold;
-  color: $green-color;
-  text-transform: uppercase;
-}
-
-.week-item__discr {
-  @include text-decoration(15px, 24px);
-  color: $gray-color;
-
-}
-
-.week-item__table-data {
-  @include text-decoration(17px, 20px);
-  color: $gray-color;
-}
-
-.week-item__price {
-  @include text-decoration(17px, 24px);
-  font-weight: bold;
-  color: $gray-color;
-  text-align: center;
-  display: block;
-}
