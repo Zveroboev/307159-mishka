@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     margin-bottom: 30px;
 
@@ -70,13 +69,24 @@
     padding-top: 100px;
   }
 
-  .promo__link-1-wrapper {
-    background-color: $green-color;
+  .promo__link-wrapper {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
 
+    @media #{$tablet-widths} {
+      flex-direction: row;
+    }
+    @media #{$desktop-widths} {
+      flex-direction: row;
+    }
   }
 
-  .promo__link-2-wrapper {
-    background-color: #56c3b2;
+  .promo__link-1 {
+    background-color: $green-color;
+  }
 
+  .promo__link-2 {
+    background-color: #56c3b2;
   }
 }
