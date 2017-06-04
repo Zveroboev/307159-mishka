@@ -1,7 +1,7 @@
 .about-us {
   @include container();
 
-
+  margin-bottom: 50px;
 
   .about-us__description {
     display: flex;
@@ -10,6 +10,8 @@
 
     @media #{$tablet-widths} {
       flex-direction: row;
+
+
     }
   }
 }

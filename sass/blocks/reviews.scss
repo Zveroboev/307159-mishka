@@ -1,9 +1,27 @@
 .reviews {
   @include container();
 
+  @media #{$tablet-widths} {
+    background: url('/img/review@1x.jpg') left no-repeat;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .reviews__item {
+    margin: 0;
+  }
+
   .reviews__description {
     @include text-decoration(15px, 30px);
     color: $gray-color;
+
+    @media #{$tablet-widths} {
+      @include text-decoration(17px, 30px);
+    }
   }
 
   .reviews__author-name {
@@ -15,5 +33,25 @@
 
   .reviews__author-mail {
     @include text-decoration(17px, 30px);
+    display: block;
+  }
+
+  .reviews__pagination {
+
+    @media #{$tablet-widths} {
+      position: absolute;
+      right: 0;
+      bottom: 50px;
+    }
+  }
+
+  .reviews__write-btn {
+
+    @media #{$tablet-widths} {
+      position: absolute;
+      right: 0;
+      top: 70px;
+    }
+
   }
 }
