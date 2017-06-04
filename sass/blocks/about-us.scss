@@ -1,3 +1,15 @@
 .about-us {
   @include container();
+
+
+
+  .about-us__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @media #{$tablet-widths} {
+      flex-direction: row;
+    }
+  }
 }

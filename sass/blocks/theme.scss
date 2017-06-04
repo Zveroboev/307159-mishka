@@ -55,6 +55,15 @@
     @include text-decoration(25px, 30px);
     color: $black-color;
     text-align: left;
+
+    @media #{$tablet-widths} {
+      @include text-decoration(43px, 50px)
+    }
+  }
+
+  .theme__about-description {
+    margin: 0;
+    padding: 0;
   }
 
   .theme__about-item {
@@ -64,6 +73,11 @@
     color: $black-color;
     padding-top: 70px;
     position: relative;
+
+    @media #{$tablet-widths} {
+      @include text-decoration(20px, 22px);
+      padding-right: 50px;
+    }
   }
 
   .theme__form-title {

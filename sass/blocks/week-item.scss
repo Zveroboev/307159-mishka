@@ -21,7 +21,6 @@
 
 
     @media #{$tablet-widths} {
-      @include text-decoration(43px, 50px);
       margin-bottom: 50px;
     }
   }
