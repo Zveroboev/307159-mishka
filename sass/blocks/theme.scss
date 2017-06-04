@@ -38,15 +38,15 @@
   }
 
   .theme__promo-link-wrapper {
-    @include container();
     height: 103px;
     width: 100%;
+    flex-shrink: 1;
 
     @media #{$tablet-widths} {
       flex-basis: 50%;
     }
     @media #{$desktop-widths} {
-      flex-basis: 300px;
+      flex-basis: 50%;
     }
   }
 
