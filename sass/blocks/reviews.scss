@@ -37,6 +37,8 @@
   }
 
   .reviews__pagination {
+    width: 260px;
+    margin: 0 auto;
 
     @media #{$tablet-widths} {
       position: absolute;
@@ -46,6 +48,7 @@
   }
 
   .reviews__write-btn {
+    margin: 0 auto;
 
     @media #{$tablet-widths} {
       position: absolute;

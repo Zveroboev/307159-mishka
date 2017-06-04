@@ -1,16 +1,40 @@
 .contacts {
   @include container();
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    padding-top: 50px;
+  }
 
   .contacts__title {
     @include text-decoration(18px, 30px);
     font-weight: bold;
+
+    @media #{$tablet-widths} {
+      @include text-decoration(43px, 50px)
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .contacts__adress-table {
+    margin-bottom: 30px;
+
   }
 
   .contacts__map {
-    background-image: url("/img/map-mobile@1x.jpg");
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    height: 457px;
-    width: 320px;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .contacts__write-btn {
+    align-self: center;
   }
 }
