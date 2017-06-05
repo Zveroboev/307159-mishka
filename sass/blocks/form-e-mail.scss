@@ -1,4 +1,8 @@
 .form-e-mail {
   display: flex;
   flex-direction: column;
+
+  @media #{$desktop-widths} {
+    padding-right: 200px;
+  }
 }

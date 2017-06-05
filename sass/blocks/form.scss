@@ -4,5 +4,9 @@
 
   .form__note {
     @include text-decoration(14px, 16px);
+
+    @media #{$tablet-widths} {
+      @include text-decoration(17px, 30px);
+    }
   }
 }
