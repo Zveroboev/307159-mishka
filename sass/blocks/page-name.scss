@@ -1,0 +1,9 @@
+.page-name {
+  background-color: $bg-color;
+  min-width: 320px;
+
+  .page-name__wrapper {
+
+    @include wrapper();
+  }
+}

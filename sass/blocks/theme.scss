@@ -22,10 +22,6 @@
 
   }
 
-  .theme_wrapper-page-title {
-    background-color: $bg-color;
-  }
-
   .theme__page-title {
     @include text-decoration(27px, 30px);
     font-weight: bold;
