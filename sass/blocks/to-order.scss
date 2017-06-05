@@ -10,4 +10,29 @@
       @include text-decoration(17px, 30px);
     }
   }
+
+  .to-order__form-color {
+    margin-bottom: 50px;
+
+    @media #{$tablet-widths} {
+      padding-top: 60px;
+      background-color: $bg-color;
+    }
+  }
+
+  .to-order__form-phone {
+
+    @media #{$tablet-widths} {
+      background-color: $bg-color;
+      padding-top: 60px;
+    }
+  }
+
+  .to-order__form-email {
+    margin-bottom: 50px;
+
+    @media #{$tablet-widths} {
+      background-color: $bg-color;
+    }
+  }
 }
