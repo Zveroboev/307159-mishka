@@ -3,6 +3,10 @@
   line-height: 18px;
   font-weight: bold;
   color: $black-color;
+
+  @media #{$tablet-widths} {
+    font-size: 19px;
+  }
 }
 
 @mixin text-decoration ($fonts-size: 16px, $lient-height: 27px){

@@ -5,6 +5,10 @@
 
   .form-type__label {
     @include form-elements-style;
+
+    @media #{$tablet-widths} {
+      padding-left: 80px;
+    }
   }
 }
 
