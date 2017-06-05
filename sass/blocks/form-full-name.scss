@@ -1,3 +1,9 @@
-.form-full-name__label {
-  @include form-elements-style;
+.form-full-name {
+  display: flex;
+  flex-direction: column;
+
+  .form-full-name__label {
+    @include form-elements-style;
+  }
 }
+

@@ -76,11 +76,33 @@
     }
   }
 
+  .theme__form {
+    position: relative;
+    margin-bottom: 30px;
+
+    @media #{$tablet-widths} {
+      margin-left: 150px;
+    }
+  }
+
   .theme__form-title {
     @include text-decoration(17px, 16px);
     font-weight: bold;
     color: $green-color;
     text-transform: uppercase;
+
+    @media #{$tablet-widths} {
+      position: absolute;
+      left: -150px;
+    }
+  }
+
+  .theme__input {
+    border: none;
+    border-bottom: 2px solid $black-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .theme__footer-inner {

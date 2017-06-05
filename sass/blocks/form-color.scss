@@ -1,3 +1,10 @@
-.form-color__label {
-  @include form-elements-style;
+.form-color {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .form-color__label {
+    @include form-elements-style;
+  }
 }
+

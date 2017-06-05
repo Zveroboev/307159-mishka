@@ -53,22 +53,24 @@
     </ul>
   </nav>
 </header>
-<section class="to-order">
-  <div class="to-order__wrapper-title theme_wrapper-page-title">
-    <h2 class="to-order__title theme__page-title">Вязание на заказ</h2>
+<section class="page-name theme__page-name">
+  <div class="page-name__wrapper">
+    <h2 class="page-name__title theme__page-title">Вязание на заказ</h2>
   </div>
-  <div class="to-order__wrapper">
+</section>
+<section class="to-order">
+  <div class="to-order__wrapper theme__wrapper">
     <p class="to-order__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
       свяжемся с вами чтобы уточнить детали.</p>
     <form action="https://echo.htmlacademy.ru/" class="to-order__form form">
-      <div class="form__type form-type">
+      <div class="form__type form-type theme__form">
         <h3 class="form__legend theme__form-title">Тип</h3>
         <input class="form-type__inner" type="radio" name="type" id="type-1" value="type-1" checked>
         <label class="form-type__label" for="type-1">Аксессуа для интерьера</label>
         <input class="form-type__inner" type="radio" name="type" id="type-2" value="type-2">
         <label class="form-type__label" for="type-2">Детская игрушка</label>
       </div>
-      <div class="form__color form-color">
+      <div class="form__color form-color theme__form">
         <h3 class="form__legend theme__form-title">Цвет</h3>
         <input type="checkbox" class="form-color__inner" name="white" id="white" checked>
         <label class="form-color__label" for="white">Белый</label>
@@ -83,27 +85,27 @@
         <input type="checkbox" class="form-color__inner" name="orange" id="orange">
         <label class="form-color__label" for="orange">Оранжевый</label>
       </div>
-      <div class="form__full-name form-full-name">
+      <div class="form__full-name form-full-name theme__form">
         <h3 class="form__legend theme__form-title">ФИО</h3>
         <label for="name" class="form-full-name__label">Имя:</label>
-        <input type="text" class="form-full-name__name" name="name" id="name" required placeholder="Введите ваше имя*" autocomplete="on">
+        <input type="text" class="form-full-name__name theme__input" name="name" id="name" required placeholder="Введите ваше имя*" autocomplete="on">
         <label for="surname" class="form-full-name__label">Фамилия:</label>
-        <input type="text" class="form-full-name__surname" name="surname" id="surname" required placeholder="Укажите фамилию*" autocomplete="on">
+        <input type="text" class="form-full-name__surname theme__input" name="surname" id="surname" required placeholder="Укажите фамилию*" autocomplete="on">
         <label for="patronymic" class="form-full-name__label">Отчество:</label>
-        <input type="text" class="form-full-name__patronymic" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" autocomplete="on">
+        <input type="text" class="form-full-name__patronymic theme__input" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" autocomplete="on">
       </div>
-      <div class="form__phone form-phone">
+      <div class="form__phone form-phone theme__form">
         <h3 class="form__legend theme__form-title">Тел</h3>
-        <input type="tel" class="form-phone__number" name="tel" required placeholder="+7 XXX XXX XX XX*" pattern="(\+?\d[- .]*){7,13}">
+        <input type="tel" class="form-phone__number theme__input" name="tel" required placeholder="+7 XXX XXX XX XX*" pattern="(\+?\d[- .]*){7,13}">
       </div>
-      <div class="form__e-mail form-e-mail">
+      <div class="form__e-mail form-e-mail theme__form">
         <h3 class="form__legend theme__form-title">E-mail</h3>
-        <input type="email" class="form-e-mail__adress" name="e-mail" required placeholder="Ваш Email*" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="on">
+        <input type="email" class="form-e-mail__adress theme__input" name="e-mail" required placeholder="Ваш Email*" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" autocomplete="on">
       </div>
-      <div class="form__add form-add">
+      <div class="form__add form-add theme__form">
         <h3 class="form__legend theme__form-title">Доп</h3>
-        <textarea name="add-info" cols="30" rows="10"
-                  class="form-add__to-order">Опишите все ваши пожелания к заказу</textarea>
+        <textarea name="add-info" cols="30" rows="6"
+                  class="form-add__to-order" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
       <span class="form__note"><sup>*</sup>Поля обязательны для заполнения</span>
       <input type="submit" class="form__submit btn" value="Отправить заказ">

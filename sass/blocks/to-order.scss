@@ -1,4 +1,8 @@
-.to-order__descr {
-  @include text-decoration(13px, 24px);
-  color: $gray-color;
+.to-order {
+  @include container();
+
+  .to-order__descr {
+    @include text-decoration(13px, 24px);
+    color: $gray-color;
+  }
 }

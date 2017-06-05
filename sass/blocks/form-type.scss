@@ -1,3 +1,11 @@
-.form-type__label {
-  @include form-elements-style;
+.form-type {
+
+  display: flex;
+  flex-direction: column;
+
+  .form-type__label {
+    @include form-elements-style;
+  }
 }
+
+
