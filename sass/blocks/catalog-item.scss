@@ -11,6 +11,11 @@
 
   .catalog-item__photo {
 
+    @media #{$tablet-widths} {
+      width: 334px;
+      height: 334px;
+    }
+
     img{
       width: 100%;
       height: auto;
