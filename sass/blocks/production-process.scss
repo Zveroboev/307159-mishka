@@ -1,7 +1,7 @@
 .production-process {
   @include container();
   margin-bottom: 50px;
-
+}
 
   .production-process__wrapper {
     border: 1px solid #ececec;
@@ -41,4 +41,3 @@
       order: 1;
     }
   }
-}

@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+}
 
   .form__note {
     @include text-decoration(14px, 16px);
@@ -26,4 +27,3 @@
     background-color: #fff;
     padding: 0;
   }
-}

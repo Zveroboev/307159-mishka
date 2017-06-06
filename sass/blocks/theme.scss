@@ -2,6 +2,7 @@
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   @include text-decoration();
+}
 
   .theme__wrapper {
     @include wrapper();
@@ -120,4 +121,3 @@
   .theme__footer-inner {
     flex-basis: 33%;
   }
-}

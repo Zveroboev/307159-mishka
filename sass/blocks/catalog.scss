@@ -1,5 +1,6 @@
 .catalog {
   @include container();
+}
 
   .catalog__items-wrapper {
     display: flex;
@@ -10,4 +11,3 @@
   .catalog__item {
     border: 1px solid $bg-color;
   }
-}

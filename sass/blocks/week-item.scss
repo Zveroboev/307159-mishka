@@ -1,7 +1,7 @@
 .week-item {
   @include container();
-
   margin-bottom: 50px;
+}
 
   .week-item__wrapper {
     display: flex;
@@ -115,10 +115,8 @@
   }
 
   .week-item__btn {
+
     @media #{$tablet-widths} {
       align-self: flex-start;
-
-
     }
   }
-}

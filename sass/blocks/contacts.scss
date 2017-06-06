@@ -8,6 +8,7 @@
   @media #{$tablet-widths} {
     padding-top: 50px;
   }
+}
 
   .contacts__title {
     @include text-decoration(18px, 30px);
@@ -32,4 +33,3 @@
   .contacts__write-btn {
     align-self: center;
   }
-}

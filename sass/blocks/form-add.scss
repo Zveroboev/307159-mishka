@@ -5,10 +5,10 @@
   @media #{$desktop-widths} {
     padding-right: 200px;
   }
+}
 
   .form-add__to-order {
     @include text-decoration(17px, 18px);
     border: 2px solid $black-color;
     padding: 15px;
   }
-}

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
 
   .footer-copyright__text {
     @include text-decoration(19px, 18px);
@@ -17,4 +18,3 @@
     width: 27px;
     height: 34px;
   }
-}

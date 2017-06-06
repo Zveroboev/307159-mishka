@@ -6,6 +6,7 @@
   @media #{$desktop-widths} {
     display: none;
   }
+}
 
   .main-nav__item {
     list-style-type: none;
@@ -42,4 +43,3 @@
     flex-grow: 1;
 
   }
-}

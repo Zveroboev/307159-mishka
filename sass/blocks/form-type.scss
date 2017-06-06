@@ -2,6 +2,7 @@
 
   display: flex;
   flex-direction: column;
+}
 
   .form-type__label {
     @include form-elements-style;
@@ -19,4 +20,3 @@
   .form-type__inner {
     display: none;
   }
-}

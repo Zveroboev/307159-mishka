@@ -7,9 +7,7 @@
     flex-direction: row;
     align-items: baseline;
   }
-
-  @media #{$desktop-widths} {
-  }
+}
 
   .form-full-name__label {
     @include form-elements-style;
@@ -24,4 +22,3 @@
     flex-grow: 1;
     flex-basis: 70%;
   }
-}

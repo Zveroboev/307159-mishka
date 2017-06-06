@@ -6,6 +6,7 @@
   @media #{$tablet-widths} {
     flex-direction: row;
   }
+}
 
   .form-color__label {
     @include form-elements-style;
@@ -22,4 +23,3 @@
   .form-color__inner {
     display: none;
   }
-}
