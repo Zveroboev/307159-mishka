@@ -53,7 +53,7 @@
     flex-grow: 1;
     align-items: stretch;
 
-     @media #{$tablet-widths} {
+    @media #{$tablet-widths} {
       min-width: 0;
       width: auto;
       margin: 0;
