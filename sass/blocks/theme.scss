@@ -78,21 +78,22 @@
 
   .theme__form {
     position: relative;
+    margin: 0 30px;
     margin-bottom: 30px;
+    min-width: 260px;
+    box-sizing: border-box;
+
 
     @media #{$tablet-widths} {
-      margin-left: 150px;
+      width: 668px;
+      padding-left: 150px;
+      margin: 0 auto;
     }
-  }
 
-  .theme__form-wrapper {
-    padding: 0 30px;
-
-    @media #{$tablet-widths} {
-      padding: 0 50px;
-    }
     @media #{$desktop-widths} {
-      padding: 0 100px;
+      width: 1050px;
+      padding-left: 200px;
+      margin: 0 auto;
     }
   }
 
@@ -104,7 +105,7 @@
 
     @media #{$tablet-widths} {
       position: absolute;
-      left: -150px;
+      left: 0;
     }
   }
 

@@ -9,7 +9,6 @@
   }
 
   @media #{$desktop-widths} {
-    padding-right: 200px;
   }
 
   .form-full-name__label {
@@ -17,20 +16,12 @@
     margin-right: 10px;
 
     @media #{$tablet-widths} {
-      flex-basis: 100px;
+      flex-basis: 130px;
     }
   }
 
   .form-full-name__input {
     flex-grow: 1;
-    flex-shrink: 1;
-
-    @media #{$tablet-widths} {
-      flex-basis: 400px;
-    }
-
-    @media #{$desktop-widths} {
-      flex-basis: 590px;
-    }
+    flex-basis: 70%;
   }
 }
