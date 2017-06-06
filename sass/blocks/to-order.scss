@@ -52,4 +52,36 @@
       background-color: $bg-color;
     }
   }
+
+  .to-order__form-add {
+
+    @media #{$tablet-widths} {
+      margin-bottom: 30px;
+    }
+  }
+
+  .to-order__form-note {
+    margin: 0 30px;
+    margin-bottom: 30px;
+    min-width: 260px;
+
+    display: flex;
+    flex-direction: column;
+
+    @media #{$tablet-widths} {
+      width: 668px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media #{$desktop-widths} {
+      width: 1050px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
 }
