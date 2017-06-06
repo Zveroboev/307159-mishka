@@ -25,36 +25,6 @@
       flex-wrap: wrap;
     }
   }
-  .promo__nav-wrapper {
-    display: none;
-
-    @media #{$tablet-widths} {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-basis: 100%;
-    }
-  }
-
-  .promo__nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-  }
-
-  .promo__nav-link {
-    text-decoration: none;
-    color: $black-color;
-    @include text-decoration(15px, 24px);
-    font-weight: bold;
-    margin-right: 30px;
-  }
-
-  .promo__info {
-    @include text-decoration(15px, 24px);
-    color: $gray-color;
-  }
 
   .promo__title-wrapper {
     flex-basis: 100%;

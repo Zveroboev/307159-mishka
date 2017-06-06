@@ -25,29 +25,8 @@
     @media #{$tablet-widths} {
       display: none;
     }
+
     @media #{$desktop-widths} {
       display: none;
-    }
-  }
-
-  .header-top__search {
-    display: none;
-
-    @media #{$tablet-widths} {
-      display: list-item;
-    }
-    @media #{$desktop-widths} {
-      display: list-item;
-    }
-  }
-
-  .header-top__basket {
-    display: none;
-
-    @media #{$tablet-widths} {
-      display: list-item;
-    }
-    @media #{$desktop-widths} {
-      display: list-item;
     }
   }

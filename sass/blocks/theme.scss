@@ -20,7 +20,14 @@
     @media #{$desktop-widths} {
       border-right: 1px solid #ececec;
     }
+  }
 
+    .theme__main-nav-list {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .theme__page-title {
