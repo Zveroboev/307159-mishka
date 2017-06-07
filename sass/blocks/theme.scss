@@ -47,6 +47,9 @@
     @media #{$tablet-widths} {
       @include text-decoration(43px, 50px);
     }
+    @media #{$desktop-widths} {
+      @include text-decoration(53px, 57px);
+    }
   }
 
   .theme__promo-link-wrapper {

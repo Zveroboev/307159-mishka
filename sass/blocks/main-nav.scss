@@ -20,9 +20,30 @@
     left: 0;
     top: 20px;
   }
+  @media #{$desktop-widths} {
+    position: absolute;
+    left: 0;
+    top: -88px;
+  }
 
-  .main-nav__item:first-child {
-    margin-right: 35px;
+  .main-nav__item {
+    border: none;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    @media #{$desktop-widths} {
+      height: 88px;
+      border-right: 1px solid #ececec;
+
+      &:first-child {
+        padding-right: 35px;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
   }
 }
 
@@ -54,57 +75,56 @@
   }
 }
 
-  .main-nav__item {
-    list-style-type: none;
-    display: flex;
+.main-nav__item {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nav__item {
+  border-top: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    height: auto;
+    border-top: none;
+    border-left: 1px solid #ececec;
   }
+}
 
-  .main-nav__item {
-    border-top: 1px solid #ececec;
-    height: 80px;
-    display: flex;
-    align-items: center;
+.main-nav__item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  align-items: stretch;
 
-    @media #{$tablet-widths} {
-      height: auto;
-      border-top: none;
-      border-left: 1px solid #ececec;
-    }
+  @media #{$tablet-widths} {
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    justify-content: flex-end;
   }
+}
 
-  .main-nav__item-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 1;
-    align-items: stretch;
+.main-nav__item-input {
 
-    @media #{$tablet-widths} {
-      min-width: 0;
-      width: auto;
-      margin: 0;
-      padding: 0;
-
-      justify-content: flex-end;
-    }
+  @media #{$tablet-widths} {
+    display: none;
   }
+}
 
-  .main-nav__item-input {
+.main-nav__item-link {
+  @include text-decoration(17px, 24px);
+  font-weight: bold;
+  text-decoration: none;
+  color: $black-color;
+  flex-grow: 1;
 
-    @media #{$tablet-widths} {
-      display: none;
-    }
+  @media #{$tablet-widths} {
+    @include text-decoration(15px, 24px);
+    flex-grow: 0;
   }
-
-  .main-nav__item-link {
-    @include text-decoration(17px, 24px);
-    font-weight: bold;
-    text-decoration: none;
-    color: $black-color;
-    flex-grow: 1;
-
-    @media #{$tablet-widths} {
-      @include text-decoration(15px, 24px);
-      flex-grow: 0;
-    }
-
-  }
+}

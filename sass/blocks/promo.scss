@@ -7,6 +7,9 @@
   @media #{$tablet-widths} {
     background-size: cover;
   }
+  @media #{$desktop-widths} {
+
+  }
 }
 
 .promo__wrapper {
@@ -39,6 +42,10 @@
     padding: 0 50px;
     padding-top: 165px;
     margin-bottom: 370px;
+  }
+  @media #{$desktop-widths} {
+    padding:0 200px;
+    padding-top: 165px;
   }
 }
 
