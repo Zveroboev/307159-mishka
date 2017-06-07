@@ -1,3 +1,25 @@
-.form-color__label {
-  @include form-elements-style;
+.form-color {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+  }
 }
+
+  .form-color__label {
+    @include form-elements-style;
+    margin-bottom: 10px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media #{$tablet-widths} {
+      flex-basis: 170px;
+    }
+  }
+
+  .form-color__inner {
+    display: none;
+  }

@@ -1,3 +1,24 @@
-.form-full-name__label {
-  @include form-elements-style;
+.form-full-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
+
+  .form-full-name__label {
+    @include form-elements-style;
+    margin-right: 10px;
+
+    @media #{$tablet-widths} {
+      flex-basis: 130px;
+    }
+  }
+
+  .form-full-name__input {
+    flex-grow: 1;
+    flex-basis: 70%;
+  }

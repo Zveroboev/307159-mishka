@@ -1,9 +1,20 @@
-.footer-copyright__text {
-  @include text-decoration(19px, 18px);
-  font-weight: bold;
-  color: $black-color;
+.footer-copyright {
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.footer-copyright__link {
-  color: $green-color;
-}
+  .footer-copyright__text {
+    @include text-decoration(19px, 18px);
+    font-weight: bold;
+    color: $black-color;
+    text-decoration: none;
+    margin-right: 29px;
+  }
+
+  .footer-copyright__link {
+    color: $green-color;
+    width: 27px;
+    height: 34px;
+  }

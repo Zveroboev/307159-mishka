@@ -1,5 +1,119 @@
+.main-nav {
+
+  @media #{$tablet-widths} {
+    position: relative;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media #{$desktop-widths} {
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__list-1 {
+
+  @media #{$tablet-widths} {
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  @media #{$desktop-widths} {
+    position: absolute;
+    left: 0;
+    top: -88px;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &:first-child {
+      margin-right: 35px;
+    }
+
+    @media #{$desktop-widths} {
+      height: 88px;
+      border-right: 1px solid #ececec;
+
+      &:first-child {
+        padding-right: 35px;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.main-nav__list-2 {
+
+  @media #{$tablet-widths} {
+    position: absolute;
+    right: 0;
+    top: -88px;
+
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+
+    @media #{$tablet-widths} {
+      height: 88px;
+      border-right: 1px solid #ececec;
+
+      &:first-child {
+        width: 85px;
+      }
+
+      &:last-child {
+        width: 265px;
+        border: none;
+      }
+    }
+  }
+}
+
 .main-nav__item {
   list-style-type: none;
+  display: flex;
+}
+
+.main-nav__item {
+  border-top: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    height: auto;
+    border-top: none;
+    border-left: 1px solid #ececec;
+  }
+}
+
+.main-nav__item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  align-items: stretch;
+
+  @media #{$tablet-widths} {
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__item-input {
+
+  @media #{$tablet-widths} {
+    display: none;
+  }
 }
 
 .main-nav__item-link {
@@ -7,4 +121,10 @@
   font-weight: bold;
   text-decoration: none;
   color: $black-color;
+  flex-grow: 1;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(15px, 24px);
+    flex-grow: 0;
+  }
 }

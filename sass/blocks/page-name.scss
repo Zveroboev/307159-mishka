@@ -1,0 +1,10 @@
+.page-name {
+  background-color: $bg-color;
+  min-width: 320px;
+  margin-bottom: 50px;
+
+  .page-name__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

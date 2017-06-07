@@ -1,7 +1,33 @@
-.adress-table__table-data {
-  @include text-decoration(15px, 30px);
+.adress-table {
 
-  &--underline {
-    border-bottom: 1px solid $green-color;
+  margin-bottom: 50px;
+
+  tbody {
+
+    @media #{$tablet-widths} {
+      display: flex;
+    }
   }
 }
+
+  .adress-table__table-row {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .adress-table__table-data {
+    @include text-decoration(15px, 30px);
+    min-width: 70px;
+    vertical-align: top;
+
+    @media #{$tablet-widths} {
+      @include  text-decoration(17px, 30px);
+    }
+
+    &--underline {
+      border-bottom: 1px solid $green-color;
+    }
+  }

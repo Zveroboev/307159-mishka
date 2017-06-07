@@ -1,3 +1,22 @@
-.form-type__label {
-  @include form-elements-style;
+.form-type {
+
+  display: flex;
+  flex-direction: column;
 }
+
+  .form-type__label {
+    @include form-elements-style;
+
+    margin-bottom: 10px;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media #{$tablet-widths} {
+      padding-left: 80px;
+    }
+  }
+
+  .form-type__inner {
+    display: none;
+  }
