@@ -1,67 +1,85 @@
 .promo {
   min-width: 320px;
   background: #fafafa url('/img/hero-mobile@1x.jpg') no-repeat 50% 0;
-  -webkit-background-size: auto;
   background-size: auto;
   margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+    background-size: cover;
+  }
 }
 
-  .promo__wrapper {
-    @include container();
+.promo__wrapper {
+  @include container();
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media #{$tablet-widths} {
     justify-content: center;
-
-    @media #{$tablet-widths} {
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    @media #{$desktop-widths} {
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .promo__title-wrapper {
-    flex-basis: 100%;
-
-    @media #{$tablet-widths} {
-      padding: 0 50px;
-    }
+  @media #{$desktop-widths} {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .promo__title {
-    margin: 0;
-    padding-bottom: 110px;
-    padding-top: 100px;
+}
+
+.promo__title-wrapper {
+  flex-basis: 100%;
+  position: relative;
+  padding-top: 75px;
+  margin-bottom: 130px;
+
+  @media #{$tablet-widths} {
+    padding: 0 50px;
+    padding-top: 165px;
+    margin-bottom: 370px;
   }
+}
 
-  .promo__link-wrapper {
-    flex-basis: 100%;
-    display: flex;
-    flex-direction: column;
+.promo__note {
+  display: none;
 
-    @media #{$tablet-widths} {
-      width: 668px;
-      margin: 0 50px;
-
-      flex-direction: row;
-    }
-    @media #{$desktop-widths} {
-      width: 1050px;
-      margin: 0 100px;
-
-      flex-direction: row;
-    }
+  @media #{$tablet-widths} {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 0;
   }
+}
 
-  .promo__link-1 {
-    background-color: $green-color;
-  }
+.promo__title {
+  margin: 0;
+}
 
-  .promo__link-2 {
-    background-color: #56c3b2;
+.promo__link-wrapper {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+    margin: 0 50px;
+
+    flex-direction: row;
   }
+  @media #{$desktop-widths} {
+    width: 1050px;
+    margin: 0 100px;
+
+    flex-direction: row;
+  }
+}
+
+.promo__link-1 {
+  background-color: $green-color;
+}
+
+.promo__link-2 {
+  background-color: #56c3b2;
+}

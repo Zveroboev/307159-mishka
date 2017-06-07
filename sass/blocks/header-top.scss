@@ -9,14 +9,29 @@
   @media #{$tablet-widths} {
     justify-content: flex-start;
   }
+  @media #{$desktop-widths} {
+    justify-content: center;
+  }
 }
 
   .header-top__logo {
 
     @media #{$tablet-widths} {
-      flex-grow: 5;
+      flex-basis: 320px;
+      height: 88px;
+      border-right: none;
+    }
+    @media #{$desktop-widths} {
+      flex-basis: auto;
     }
   }
+
+.header-top__logo-img {
+
+  @media #{$tablet-widths} {
+    padding-top: 22px;
+  }
+}
 
   .header-top__toggler {
     position: absolute;

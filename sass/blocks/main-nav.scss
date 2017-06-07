@@ -7,7 +7,9 @@
   }
 
   @media #{$desktop-widths} {
-    display: none;
+    position: relative;
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -16,7 +18,11 @@
   @media #{$tablet-widths} {
     position: absolute;
     left: 0;
-    width:50%;
+    top: 20px;
+  }
+
+  .main-nav__item:first-child {
+    margin-right: 35px;
   }
 }
 
@@ -25,8 +31,26 @@
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
-    top: -43px;
-    width:50%;
+    top: -88px;
+
+    justify-content: flex-end;
+  }
+
+  .main-nav__item {
+
+    @media #{$tablet-widths} {
+      height: 88px;
+      border-right: 1px solid #ececec;
+
+      &:first-child {
+        width: 85px;
+      }
+
+      &:last-child {
+        width: 265px;
+        border: none;
+      }
+    }
   }
 }
 
@@ -43,7 +67,8 @@
 
     @media #{$tablet-widths} {
       height: auto;
-      border: none;
+      border-top: none;
+      border-left: 1px solid #ececec;
     }
   }
 
@@ -58,6 +83,15 @@
       width: auto;
       margin: 0;
       padding: 0;
+
+      justify-content: flex-end;
+    }
+  }
+
+  .main-nav__item-input {
+
+    @media #{$tablet-widths} {
+      display: none;
     }
   }
 
@@ -69,7 +103,8 @@
     flex-grow: 1;
 
     @media #{$tablet-widths} {
-      margin-right: 20px;
+      @include text-decoration(15px, 24px);
+      flex-grow: 0;
     }
 
   }
