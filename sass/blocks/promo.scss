@@ -26,9 +26,7 @@
   }
 
   @media #{$desktop-widths} {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+
   }
 }
 
@@ -78,8 +76,6 @@
   @media #{$desktop-widths} {
     width: 1050px;
     margin: 0 100px;
-
-    flex-direction: row;
   }
 }
 
