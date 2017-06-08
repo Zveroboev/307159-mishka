@@ -81,8 +81,25 @@
 
 .promo__link-1 {
   background-color: $green-color;
+
+  &::after {
+    content: url("/img/icon-interior.svg");
+    right: 25px;
+    top: 20px;
+  }
 }
 
 .promo__link-2 {
   background-color: #56c3b2;
+
+  &::after {
+    content: url("/img/icon-toy.svg");
+    right: 17px;
+    top: 20px;
+  }
+}
+
+.promo__link-text {
+  margin-left: 30px;
+  flex-basis: 130px;
 }

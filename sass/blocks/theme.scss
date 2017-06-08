@@ -60,12 +60,20 @@
 
 .theme__promo-link {
   @include text-decoration(19px, 24px);
+  position: relative;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  display: block;
   height: 100px;
   width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  &::after {
+    position: absolute;
+    opacity: 0.2;
+  }
 }
 
 .theme__section-title {
