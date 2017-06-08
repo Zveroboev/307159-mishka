@@ -1,17 +1,36 @@
 .about-us {
   @include container();
-
+  padding-top: 30px;
   margin-bottom: 50px;
 }
 
-  .about-us__description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.about-us__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    @media #{$tablet-widths} {
-      flex-direction: row;
+  @media #{$tablet-widths} {
+    flex-direction: row;
 
-
-    }
   }
+}
+
+.about-us__item1::before {
+  content: url("/img/icon-feature-1.svg");
+}
+.about-us__item2::before {
+  content: url("/img/icon-feature-2.svg");
+}
+.about-us__item3::before {
+  content: url("/img/icon-feature-3.svg");
+}
+.about-us__item4::before {
+  content: url("/img/icon-feature-4.svg");
+}
+.about-us__item5::before {
+  content: url("/img/icon-feature-5.svg");
+}
+.about-us__item6::before {
+  content: url("/img/icon-feature-6.svg");
+}
+
