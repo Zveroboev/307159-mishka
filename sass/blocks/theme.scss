@@ -78,6 +78,7 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(20px, 30px);
+    height: 115px;
   }
 }
 
@@ -89,6 +90,9 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px)
+  }
+  @media #{$desktop-widths} {
+    @include text-decoration(53px, 57px);
   }
 }
 
@@ -102,6 +106,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media #{$desktop-widths} {
+    width: 350px;
   }
 }
 

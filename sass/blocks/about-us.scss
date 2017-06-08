@@ -4,6 +4,13 @@
   margin-bottom: 50px;
 }
 
+.about-us__wrapper {
+
+  @media #{$desktop-widths} {
+    padding-left: 170px;
+  }
+}
+
 .about-us__title {
   margin-bottom: 50px;
 }
@@ -15,7 +22,6 @@
 
   @media #{$tablet-widths} {
     flex-direction: row;
-
   }
 }
 

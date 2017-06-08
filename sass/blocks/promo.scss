@@ -10,6 +10,7 @@
   }
   @media #{$desktop-widths} {
     background-size: contain;
+    margin-bottom: 70px;
   }
 }
 
@@ -43,11 +44,12 @@
   @media #{$tablet-widths} {
     padding: 0 50px;
     padding-top: 165px;
-    margin-bottom: 370px;
+
   }
   @media #{$desktop-widths} {
     padding: 0 160px;
     padding-top: 165px;
+    margin-bottom: 355px;
   }
 }
 

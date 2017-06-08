@@ -5,6 +5,9 @@
     background: url('/img/review@1x.jpg') left no-repeat;
     margin-bottom: 50px;
   }
+  @media #{$desktop-widths} {
+    background-position-x: 50px;
+  }
 }
 
 .reviews__wrapper {
@@ -13,6 +16,10 @@
 
   @media #{$tablet-widths} {
     padding-top: 50px;
+  }
+  @media #{$desktop-widths} {
+    box-sizing: border-box;
+    padding-left: 170px;
   }
 }
 
