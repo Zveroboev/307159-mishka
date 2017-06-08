@@ -103,9 +103,14 @@
 .main-nav__item-input {
   border: none;
 
-  &[placeholder] {
+  &::placeholder {
     @include text-decoration(17px, 24px);
     font-weight: bold;
+    color: $black-color;
+  }
+
+  &[placeholder] {
+    @include text-decoration(17px, 24px);
     color: $black-color;
   }
 
