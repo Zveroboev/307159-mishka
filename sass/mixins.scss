@@ -9,11 +9,10 @@
   }
 }
 
-@mixin text-decoration ($fonts-size: 16px, $lient-height: 27px){
+@mixin text-decoration($fonts-size: 16px, $lient-height: 27px) {
   font-size: $fonts-size;
   line-height: $lient-height;
 }
-
 
 @mixin container() {
   min-width: 320px;

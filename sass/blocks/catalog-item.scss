@@ -3,63 +3,62 @@
   display: flex;
   flex-direction: column;
 
-
   @media #{$tablet-widths} {
     flex-direction: row;
     justify-content: flex-end;
   }
 }
 
-  .catalog-item__photo {
+.catalog-item__photo {
+
+  @media #{$tablet-widths} {
+    width: 334px;
+    height: 334px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
 
     @media #{$tablet-widths} {
       width: 334px;
       height: 334px;
     }
-
-    img{
-      width: 100%;
-      height: auto;
-
-      @media #{$tablet-widths} {
-        width: 334px;
-        height: 334px;
-      }
-    }
-
   }
 
-  .catalog-item__text-wrapper {
-    margin: 0;
-    padding-left: 25px;
-    padding-right: 25px;
+}
 
-    @media #{$tablet-widths} {
-      width: 334px;
-      height: 334px;
+.catalog-item__text-wrapper {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
 
-      flex-basis: 50%;
-    }
+  @media #{$tablet-widths} {
+    width: 334px;
+    height: 334px;
+
+    flex-basis: 50%;
   }
+}
 
-  .catalog-item__name {
-    @include text-decoration(17px, 24px);
-    font-weight: bold;
-    display: block;
-  }
+.catalog-item__name {
+  @include text-decoration(17px, 24px);
+  font-weight: bold;
+  display: block;
+}
 
-  .catalog-item__descr {
-    @include text-decoration(13px, 30px);
-    color: $gray-color;
-    display: block;
-    border-bottom: 1px solid $green-color;
-    padding-bottom: 20px;
-  }
+.catalog-item__descr {
+  @include text-decoration(13px, 30px);
+  color: $gray-color;
+  display: block;
+  border-bottom: 1px solid $green-color;
+  padding-bottom: 20px;
+}
 
-  .catalog-item__price {
-    @include text-decoration(15px, 24px);
-    font-weight: bold;
-    display: block;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
+.catalog-item__price {
+  @include text-decoration(15px, 24px);
+  font-weight: bold;
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}

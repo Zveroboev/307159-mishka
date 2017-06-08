@@ -8,18 +8,18 @@
   }
 }
 
-  .form-color__label {
-    @include form-elements-style;
-    margin-bottom: 10px;
-    padding-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.form-color__label {
+  @include form-elements-style;
+  margin-bottom: 10px;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-    @media #{$tablet-widths} {
-      flex-basis: 170px;
-    }
+  @media #{$tablet-widths} {
+    flex-basis: 170px;
   }
+}
 
-  .form-color__inner {
-    display: none;
-  }
+.form-color__inner {
+  display: none;
+}

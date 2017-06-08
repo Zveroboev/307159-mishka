@@ -1,86 +1,85 @@
 .to-order {
-  //@include container();
   min-width: 320px;
 }
 
-  .to-order__wrapper {
-    min-width: 260px;
-    margin: 0 30px;
+.to-order__wrapper {
+  min-width: 260px;
+  margin: 0 30px;
 
-    @media #{$tablet-widths} {
-      width: 668px;
-      margin: 0 auto;
-    }
-
-    @media #{$desktop-widths} {
-      width: 1050px;
-      margin: 0 auto;
-    }
+  @media #{$tablet-widths} {
+    width: 668px;
+    margin: 0 auto;
   }
 
-  .to-order__descr {
-    @include text-decoration(13px, 24px);
-    color: $gray-color;
+  @media #{$desktop-widths} {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.to-order__descr {
+  @include text-decoration(13px, 24px);
+  color: $gray-color;
+  margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(17px, 30px);
+  }
+}
+
+.to-order__form-color {
+  margin-bottom: 50px;
+
+  @media #{$tablet-widths} {
+    padding-top: 60px;
+    background-color: $bg-color;
+  }
+}
+
+.to-order__form-phone {
+
+  @media #{$tablet-widths} {
+    background-color: $bg-color;
+    padding-top: 60px;
+  }
+}
+
+.to-order__form-email {
+  margin-bottom: 50px;
+
+  @media #{$tablet-widths} {
+    background-color: $bg-color;
+  }
+}
+
+.to-order__form-add {
+
+  @media #{$tablet-widths} {
     margin-bottom: 30px;
-
-    @media #{$tablet-widths} {
-      @include text-decoration(17px, 30px);
-    }
   }
+}
 
-  .to-order__form-color {
+.to-order__form-note {
+  margin: 0 30px;
+  margin-bottom: 30px;
+  min-width: 260px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+    margin: 0 auto;
     margin-bottom: 50px;
 
-    @media #{$tablet-widths} {
-      padding-top: 60px;
-      background-color: $bg-color;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .to-order__form-phone {
-
-    @media #{$tablet-widths} {
-      background-color: $bg-color;
-      padding-top: 60px;
-    }
-  }
-
-  .to-order__form-email {
+  @media #{$desktop-widths} {
+    width: 1050px;
+    margin: 0 auto;
     margin-bottom: 50px;
-
-    @media #{$tablet-widths} {
-      background-color: $bg-color;
-    }
   }
-
-  .to-order__form-add {
-
-    @media #{$tablet-widths} {
-      margin-bottom: 30px;
-    }
-  }
-
-  .to-order__form-note {
-    margin: 0 30px;
-    margin-bottom: 30px;
-    min-width: 260px;
-
-    display: flex;
-    flex-direction: column;
-
-    @media #{$tablet-widths} {
-      width: 668px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    @media #{$desktop-widths} {
-      width: 1050px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-    }
-  }
+}

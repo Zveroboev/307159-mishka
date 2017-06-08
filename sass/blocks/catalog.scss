@@ -2,12 +2,12 @@
   @include container();
 }
 
-  .catalog__items-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.catalog__items-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .catalog__item {
-    border: 1px solid $bg-color;
-  }
+.catalog__item {
+  border: 1px solid $bg-color;
+}

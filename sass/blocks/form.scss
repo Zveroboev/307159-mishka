@@ -3,27 +3,27 @@
   flex-direction: column;
 }
 
-  .form__note {
-    @include text-decoration(14px, 16px);
-    margin-bottom: 30px;
+.form__note {
+  @include text-decoration(14px, 16px);
+  margin-bottom: 30px;
 
-    @media (max-width: 767px) {
-      align-self: flex-start;
-    }
-    @media #{$tablet-widths} {
-      @include text-decoration(17px, 30px);
-      margin-bottom: 0;
+  @media (max-width: 767px) {
+    align-self: flex-start;
+  }
+  @media #{$tablet-widths} {
+    @include text-decoration(17px, 30px);
+    margin-bottom: 0;
 
-      order: 1;
-    }
-
-    @media #{$desktop-widths} {
-      order: 1;
-    }
+    order: 1;
   }
 
-  .form__submit {
-    align-self: center;
-    background-color: #fff;
-    padding: 0;
+  @media #{$desktop-widths} {
+    order: 1;
   }
+}
+
+.form__submit {
+  align-self: center;
+  background-color: #fff;
+  padding: 0;
+}

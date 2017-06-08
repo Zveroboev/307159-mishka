@@ -16,12 +16,12 @@
   font-weight: bold;
 
   @media #{$tablet-widths} {
-    @include text-decoration(43px, 50px)
+    @include text-decoration(43px, 50px);
     margin: 0;
     margin-bottom: 30px;
     position: relative;
 
-    &::after{
+    &::after {
       position: absolute;
       right: 0;
       top: -30px;
