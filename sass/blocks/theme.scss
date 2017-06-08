@@ -49,6 +49,7 @@
   font-weight: bold;
   color: $black-color;
   text-align: center;
+  margin: 0;
 
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px);
@@ -73,6 +74,10 @@
   &::after {
     position: absolute;
     opacity: 0.2;
+  }
+
+  @media #{$tablet-widths} {
+    @include text-decoration(20px, 30px);
   }
 }
 

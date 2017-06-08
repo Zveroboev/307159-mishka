@@ -6,6 +6,7 @@
 
   @media #{$tablet-widths} {
     background-size: cover;
+    border-top: 1px solid #e7e7e7;
   }
   @media #{$desktop-widths} {
     background-size: contain;
@@ -13,13 +14,16 @@
 }
 
 .promo__wrapper {
-  @include container();
+  @include wrapper();
+  margin: auto;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @media #{$tablet-widths} {
+    margin: 0 auto;
+
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,35 +51,13 @@
   }
 }
 
-.promo__note {
-  display: none;
-
-  @media #{$tablet-widths} {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 0;
-  }
-}
-
-.promo__title {
-  margin: 0;
-}
-
 .promo__link-wrapper {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-widths} {
-    width: 668px;
-    margin: 0 50px;
-
     flex-direction: row;
-  }
-  @media #{$desktop-widths} {
-    width: 1050px;
-    margin: 0 100px;
   }
 }
 
