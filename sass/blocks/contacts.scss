@@ -2,12 +2,21 @@
   @include container();
   margin-bottom: 50px;
   padding-top: 50px;
+  position: relative;
 
   display: flex;
   flex-direction: column;
 
   @media #{$tablet-widths} {
     padding-top: 50px;
+  }
+}
+.contacts__wrapper {
+
+  @media #{$desktop-widths} {
+    width: 525px;
+    padding-left: 170px;
+    box-sizing: border-box;
   }
 }
 
@@ -26,6 +35,14 @@
       right: 0;
       top: -30px;
       content: url("/img/icon-flag.svg");
+    }
+  }
+
+  @media #{$desktop-widths} {
+
+    &::after {
+      left: -100px;
+      top: -10px;
     }
   }
 }
@@ -47,13 +64,35 @@
   }
 
   @media #{$tablet-widths} {
+
     &::before {
       top: 36%;
       left: 45%;
+    }
+
+    img {
+      width: 758px;
+      height: 457px;
+    }
+  }
+  @media #{$desktop-widths} {
+    position: absolute;
+    right: 50px;
+    top: 0;
+
+    img {
+      width: 525px;
+      height: 457px;
     }
   }
 }
 
 .contacts__write-btn {
   align-self: center;
+
+  @media #{$desktop-widths} {
+    align-self: flex-start;
+
+    margin-left: 220px;
+  }
 }

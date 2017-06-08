@@ -18,11 +18,13 @@
 
 
   @media #{$tablet-widths} {
-    padding-left: 175px;
-    box-sizing: border-box;
+    //padding-top: 70px;
   }
   @media #{$desktop-widths} {
     margin-top: 70px;
+    padding-left: 175px;
+    box-sizing: border-box;
+    padding-top: 70px;
   }
 }
 

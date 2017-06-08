@@ -2,9 +2,11 @@
   margin-bottom: 50px;
 
   tbody {
-
     @media #{$tablet-widths} {
       display: flex;
+    }
+    @media #{$desktop-widths} {
+      flex-direction: column;
     }
   }
 }
@@ -14,6 +16,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 30px;
   }
 }
 
