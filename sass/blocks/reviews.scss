@@ -3,12 +3,24 @@
 
   @media #{$tablet-widths} {
     background: url('/img/review@1x.jpg') left no-repeat;
+    margin-bottom: 50px;
   }
 }
 
 .reviews__wrapper {
   position: relative;
   padding-bottom: 50px;
+
+  @media #{$tablet-widths} {
+    padding-top: 50px;
+  }
+}
+
+.reviews__title {
+
+  @media #{$tablet-widths} {
+    margin-bottom: 50px;
+  }
 }
 
 .reviews__item {
@@ -45,10 +57,12 @@
   margin-bottom: 30px;
 
   display: flex;
+
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
     bottom: 50px;
+    width: 175px;
   }
 }
 
@@ -66,7 +80,8 @@
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 50px;
+    width: 175px;
   }
 
 }

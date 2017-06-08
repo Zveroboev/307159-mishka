@@ -38,7 +38,10 @@
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 15px;
+    width: 80px;
+    text-align: center;
+    line-height: 17px;
   }
 }
 
@@ -50,7 +53,8 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
-    width: 330px;
+    width: 290px;
+
     align-self: flex-start;
   }
 }
@@ -60,12 +64,11 @@
   width: 100%;
 
   @media #{$tablet-widths} {
+    width: 290px;
+    margin-bottom: 50px;
+
     align-self: flex-start;
   }
-}
-
-.week-item__table-row {
-
 }
 
 .week-item__table-data {
@@ -113,6 +116,8 @@
 
   @media #{$tablet-widths} {
     align-self: flex-start;
+    margin-bottom: 35px;
+    width: 290px;
   }
 }
 
@@ -120,5 +125,6 @@
 
   @media #{$tablet-widths} {
     align-self: flex-start;
+    width: 290px;
   }
 }

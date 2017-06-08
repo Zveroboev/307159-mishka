@@ -19,6 +19,14 @@
     @include text-decoration(43px, 50px)
     margin: 0;
     margin-bottom: 30px;
+    position: relative;
+
+    &::after{
+      position: absolute;
+      right: 0;
+      top: -30px;
+      content: url("/img/icon-flag.svg");
+    }
   }
 }
 
@@ -36,6 +44,13 @@
   img {
     width: 100%;
     height: auto;
+  }
+
+  @media #{$tablet-widths} {
+    &::before {
+      top: 36%;
+      left: 45%;
+    }
   }
 }
 

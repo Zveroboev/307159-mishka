@@ -85,6 +85,7 @@
   @include text-decoration(25px, 30px);
   color: $black-color;
   text-align: left;
+  margin: 0;
 
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px)
@@ -94,6 +95,14 @@
 .theme__about-description {
   margin: 0;
   padding: 0;
+
+  @media #{$tablet-widths} {
+    width: 334px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .theme__about-item {
@@ -113,7 +122,8 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(20px, 22px);
-    padding-right: 50px;
+    padding-right: 40px;
+    margin-bottom: 50px;
   }
 }
 
@@ -125,6 +135,10 @@
   line-height: 0;
 
   flex-basis: 130px;
+
+  @media #{$tablet-widths} {
+    border: none;
+  }
 }
 
 .theme__form {
