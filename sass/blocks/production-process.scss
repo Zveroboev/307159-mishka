@@ -3,6 +3,8 @@
   margin-bottom: 50px;
 
   @media #{$desktop-widths} {
+    margin-bottom: 100px;
+
     display: flex;
     justify-content: flex-end;
     position: relative;

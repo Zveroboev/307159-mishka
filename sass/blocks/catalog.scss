@@ -1,5 +1,9 @@
 .catalog {
   @include container();
+
+  @media #{$desktop-widths} {
+    margin-bottom: 60px;
+  }
 }
 
 .catalog__items-wrapper {
