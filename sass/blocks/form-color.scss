@@ -10,16 +10,50 @@
 
 .form-color__label {
   @include form-elements-style;
+  box-sizing: border-box;
   margin-bottom: 10px;
   padding-left: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
 
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #454545;
+    left: 0;
+    top: 0;
+  }
+
   @media #{$tablet-widths} {
-    flex-basis: 170px;
+    width: 250px;
   }
 }
 
 .form-color__inner {
   display: none;
+}
+
+.form-color__inner:checked {
+  display: none;
+  width: 0;
+  height: 0;
+  position: relative;
+  outline: none;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $green-color;
+    border-radius: 50%;
+    left: 14px;
+    top: 14px;
+  }
 }
