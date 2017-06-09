@@ -22,7 +22,16 @@
   }
 
   @media #{$tablet-widths} {
+    @include text-decoration(20px, 24px);
+    padding-left: 110px;
+    padding-right: 20px;
+
     order: 1;
+
+    &::before {
+      left: 40px;
+      top: 0;
+    }
   }
 }
 
@@ -40,6 +49,10 @@
   padding-right: 65px;
 
   @media #{$tablet-widths} {
+    @include text-decoration(15px, 30px);
+    padding-left: 40px;
+    padding-right: 40px;
+
     order: 1;
   }
 }
@@ -50,6 +63,8 @@
   margin-bottom: 30px;
 
   @media #{$tablet-widths} {
+    width: 585px;
+
     order: 1;
   }
 }
