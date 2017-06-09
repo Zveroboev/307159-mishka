@@ -134,6 +134,7 @@
   justify-content: flex-start;
   flex-grow: 1;
   align-items: stretch;
+  box-sizing: border-box;
 
   @media (max-width: 767px) {
     padding-left: 45px;

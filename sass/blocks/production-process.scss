@@ -11,6 +11,15 @@
 }
 
 .production-process__title {
+  padding-left: 90px;
+  position: relative;
+
+  &::before {
+    content: url("/img/icon-video.svg");
+    position: absolute;
+    left: 35px;
+    top: 10px;
+  }
 
   @media #{$tablet-widths} {
     order: 1;
@@ -27,6 +36,8 @@
 .production-process__discr {
   @include text-decoration(13px, 24px);
   color: $gray-color;
+  padding-left: 10px;
+  padding-right: 65px;
 
   @media #{$tablet-widths} {
     order: 1;
@@ -35,7 +46,8 @@
 
 .production-process__order {
   align-self: center;
-  width: 100%;
+  width: 230px;
+  margin-bottom: 30px;
 
   @media #{$tablet-widths} {
     order: 1;
