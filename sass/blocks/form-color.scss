@@ -39,7 +39,7 @@
 }
 
 .form-color__inner:checked {
-  display: none;
+  display: block;
   width: 0;
   height: 0;
   position: relative;
@@ -47,7 +47,6 @@
 
   &::after {
     content: "";
-    display: block;
     position: absolute;
     width: 16px;
     height: 16px;
