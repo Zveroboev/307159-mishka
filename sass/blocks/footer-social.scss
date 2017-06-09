@@ -4,6 +4,18 @@
 }
 
 .footer-social__item {
-  font-size: 10px;
-  line-height: 17px;
+  font-size: 0;
+  line-height: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.footer-social__item--insta {
+  background: url(/img/icon-insta.svg) no-repeat center;
+}
+.footer-social__item--fb {
+  background: url(/img/icon-fb.svg) no-repeat center;
+}
+.footer-social__item--twitter {
+  background: url(/img/icon-twitter.svg) no-repeat center;
 }

@@ -10,6 +10,9 @@
   @media #{$tablet-widths} {
     padding-top: 50px;
   }
+  @media #{$desktop-widths} {
+    margin-bottom: 70px;
+  }
 }
 .contacts__wrapper {
 

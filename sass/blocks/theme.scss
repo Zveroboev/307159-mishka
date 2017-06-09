@@ -3,6 +3,7 @@
   box-sizing: border-box;
   @include text-decoration();
   overflow-x: hidden;
+  position: relative;
 }
 
 .theme__wrapper {
@@ -187,8 +188,4 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-}
-
-.theme__footer-inner {
-  flex-basis: 33%;
 }

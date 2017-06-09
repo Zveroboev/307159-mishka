@@ -1,4 +1,6 @@
 .week-item {
+  position: relative;
+
   @include container();
   margin-bottom: 30px;
 
@@ -147,6 +149,9 @@
     align-self: flex-start;
     margin-bottom: 35px;
     width: 290px;
+  }
+  @media #{$desktop-widths} {
+    @include text-decoration(20px, 24px);
   }
 }
 

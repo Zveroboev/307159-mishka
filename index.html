@@ -101,6 +101,23 @@
     <a href="modal.html" class="week-item__btn btn" target="_blank">Заказать</a>
   </div>
 </section>
+<section class="modal modal--closed">
+  <div class="modal__wrapper">
+    <h3 class="modal__title">Добавить в корзину</h3>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="modal__input-wrapper">
+        <label for="input-check-S" class="modal__label-1">S</label>
+        <input class="modal__form-size modal__form-size--active" id="input-check-S" type="radio" name="size" value="S" checked>
+        <label for="input-check-M" class="modal__label-2">M</label>
+        <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
+        <label for="input-check-L" class="modal__label-3">L</label>
+        <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
+      </div>
+      <input class="modal__form-send" type="submit" value="Добавить">
+    </form>
+  </div>
+</section>
 <section class="about-us">
   <div class="about-us__wrapper theme__wrapper">
     <h3 class="about-us__title theme__section-title">Коротко о нас:</h3>
@@ -167,7 +184,7 @@
     </table>
   </div>
   <picture class="contacts__map">
-    <source media="(min-width: 768px)" srcset="/img/map-tablet@1x.jpg">
+    <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/map-tablet@1x.jpg">
     <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg">
     <img src="/img/map-mobile@1x.jpg" alt="Map" width="320" height="457">
   </picture>
@@ -179,9 +196,9 @@
       <img src="/img/logo-mobile.svg" alt="Logo">
     </div>
     <div class="footer-social theme__footer-inner">
-      <a href="#" class="footer-social__item footer-social__item--vk">Мы в Вконтакте</a>
+      <a href="#" class="footer-social__item footer-social__item--insta">Мы в Инстаграмме</a>
       <a href="#" class="footer-social__item footer-social__item--fb">Мы в Фейсбуке</a>
-      <a href="#" class="footer-social__item footer-social__item--in">Мы в Инстаграмме</a>
+      <a href="#" class="footer-social__item footer-social__item--twitter">Мы в Твиттере</a>
     </div>
     <div class="footer-copyright theme__footer-inner">
       <a href="https://htmlacademy.ru/" class="footer-copyright__text">Разработано</a>

@@ -2,9 +2,11 @@
   @include container();
   padding-top: 30px;
   margin-bottom: 50px;
+
 }
 
 .about-us__wrapper {
+  box-sizing: border-box;
 
   @media #{$desktop-widths} {
     padding-left: 170px;
