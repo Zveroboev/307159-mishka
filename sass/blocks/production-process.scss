@@ -1,6 +1,12 @@
 .production-process {
   @include container();
   margin-bottom: 50px;
+
+  @media #{$desktop-widths} {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
 }
 
 .production-process__wrapper {
@@ -8,6 +14,11 @@
 
   display: flex;
   flex-direction: column;
+
+  @media #{$desktop-widths} {
+    height: 455px;
+    flex-wrap: wrap;
+  }
 }
 
 .production-process__title {
@@ -18,7 +29,7 @@
     content: url("/img/icon-video.svg");
     position: absolute;
     left: 35px;
-    top: 10px;
+    top: -6px;
   }
 
   @media #{$tablet-widths} {
@@ -30,15 +41,55 @@
 
     &::before {
       left: 40px;
-      top: 0;
+    }
+  }
+  @media #{$desktop-widths} {
+    width: 350px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-left: 40px;
+    padding-right: 75px;
+
+    &::before {
+      left: 40px;
+      top: -60px;
     }
   }
 }
 
 .production-process__video {
+  width: 260px;
+  height: 150px;
+  margin: 0 auto;
 
   @media #{$tablet-widths} {
+    width: 668px;
+    height: 455px;
+    margin: 0;
+    margin-bottom: 40px;
+
     order: 0;
+  }
+  @media #{$desktop-widths} {
+    width: 682px;
+    margin: 0;
+
+    flex-basis: 100%;
+
+  }
+}
+
+.production-process__video-inner {
+  width: 260px;
+  height: 150px;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+    height: 455px;
+  }
+  @media #{$desktop-widths} {
+    width: 682px;
+    height: 455px;
   }
 }
 
@@ -55,6 +106,12 @@
 
     order: 1;
   }
+  @media #{$desktop-widths} {
+    width: 350px;
+    box-sizing: border-box;
+
+    flex-grow: 1;
+  }
 }
 
 .production-process__order {
@@ -66,5 +123,12 @@
     width: 585px;
 
     order: 1;
+  }
+  @media #{$desktop-widths} {
+    width: 235px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+
+    align-self: flex-start;
   }
 }

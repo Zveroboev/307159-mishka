@@ -70,7 +70,8 @@
   <div class="catalog__items-wrapper theme__wrapper">
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-1-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-1-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-1-desktop.png">
         <img src="/img/photo-1-mobile@1x.jpg" alt="item photo" width="260" height="195">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -81,7 +82,8 @@
     </div>
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-2-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-2-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-2-desktop.png">
         <img src="/img/photo-2-mobile@1x.jpg" alt="item photo" height="195" width="260">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -92,7 +94,8 @@
     </div>
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-3-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-3-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-3-desktop.png">
         <img src="/img/photo-3-mobile@1x.jpg" alt="item photo" height="195" width="260">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -106,12 +109,32 @@
 <section class="production-process">
   <div class="production-process__wrapper theme__wrapper">
     <h3 class="production-process__title">Процесс производства</h3>
-    <video class="production-process_video" controls="controls" poster="#">
-      <source src="#">
-    </video>
+    <div class="production-process__video">
+      <video src="" class="production-process__video-inner" controls="controls" poster="#">
+        <source src="#">
+      </video>
+
+    </div>
     <p class="production-process__discr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
       как появляются наши товары.</p>
     <a href="modal.html" class="production-process__order btn" target="_blank">Сделать заказ</a>
+  </div>
+</section>
+<section class="modal modal--closed">
+  <div class="modal__wrapper">
+    <h3 class="modal__title">Добавить в корзину</h3>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="modal__input-wrapper">
+        <label for="input-check-S" class="modal__label-1">S</label>
+        <input class="modal__form-size modal__form-size--active" id="input-check-S" type="radio" name="size" value="S" checked>
+        <label for="input-check-M" class="modal__label-2">M</label>
+        <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
+        <label for="input-check-L" class="modal__label-3">L</label>
+        <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
+      </div>
+      <input class="modal__form-send" type="submit" value="Добавить">
+    </form>
   </div>
 </section>
 <footer class="page-footer">
