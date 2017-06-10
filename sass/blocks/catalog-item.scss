@@ -14,6 +14,10 @@
 }
 
 .catalog-item__photo {
+  background-color: #e4e4e4;
+  height: 195px;
+  width: 260px;
+  margin: 0 auto;
   margin-bottom: 30px;
 
   @media #{$tablet-widths} {
@@ -29,17 +33,7 @@
 
   img {
     width: 100%;
-    height: auto;
-
-    @media #{$tablet-widths} {
-      width: 334px;
-      height: 334px;
-    }
-
-    @media #{$desktop-widths} {
-      width: 315px;
-      height: 462px;
-    }
+    height: 100%;
   }
 
 }
