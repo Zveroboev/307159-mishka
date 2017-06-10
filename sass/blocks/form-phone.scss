@@ -2,3 +2,19 @@
   display: flex;
   flex-direction: column;
 }
+
+.form-phone__number {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+    background-color: $bg-color;
+  }
+}
+
+.form-phone__number::placeholder {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+    background-color: $bg-color;
+  }
+}

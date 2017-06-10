@@ -2,3 +2,19 @@
   display: flex;
   flex-direction: column;
 }
+
+.form-e-mail__adress {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+    background-color: $bg-color;
+  }
+}
+
+.form-e-mail__adress::placeholder {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+    background-color: $bg-color;
+  }
+}

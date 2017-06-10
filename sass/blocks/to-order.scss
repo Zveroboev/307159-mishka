@@ -28,11 +28,19 @@
 }
 
 .to-order__form-color {
-  margin-bottom: 50px;
 
   @media #{$tablet-widths} {
-    padding-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     background-color: $bg-color;
+    margin-bottom: 65px;
+  }
+}
+
+.to-order__form-full-name {
+
+  @media #{$tablet-widths} {
+    margin-bottom: 65px;
   }
 }
 
@@ -41,6 +49,14 @@
   @media #{$tablet-widths} {
     background-color: $bg-color;
     padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+.to-order__form-email {
+
+  @media #{$tablet-widths} {
+    padding-bottom: 45px;
   }
 }
 
@@ -55,7 +71,7 @@
 .to-order__form-add {
 
   @media #{$tablet-widths} {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 

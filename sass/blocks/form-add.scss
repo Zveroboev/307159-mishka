@@ -11,4 +11,15 @@
   @include text-decoration(17px, 18px);
   border: 2px solid $black-color;
   padding: 15px;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
+}
+
+.form-add__to-order::placeholder {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
 }

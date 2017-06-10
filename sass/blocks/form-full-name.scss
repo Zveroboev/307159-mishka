@@ -12,6 +12,7 @@
 .form-full-name__label {
   @include form-elements-style;
   margin-right: 10px;
+  cursor: pointer;
 
   @media #{$tablet-widths} {
     flex-basis: 130px;
@@ -21,4 +22,15 @@
 .form-full-name__input {
   flex-grow: 1;
   flex-basis: 70%;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
+}
+
+.form-full-name::placeholder {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
 }
