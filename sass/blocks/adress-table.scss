@@ -31,8 +31,8 @@
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
   }
+}
 
-  &--underline {
-    border-bottom: 1px solid $green-color;
-  }
+.adress-table__table-data-inner {
+  border-bottom: 1px solid $green-color;
 }

@@ -67,6 +67,7 @@
   </div>
 </section>
 <section class="catalog">
+  <h3 class="catalog__title catalog__title--hidden">Выберите товар</h3>
   <div class="catalog__items-wrapper theme__wrapper">
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
@@ -110,10 +111,9 @@
   <div class="production-process__wrapper theme__wrapper">
     <h3 class="production-process__title">Процесс производства</h3>
     <div class="production-process__video">
-      <video src="" class="production-process__video-inner" controls="controls" poster="#">
+      <video src="#" class="production-process__video-inner" controls="controls" poster="#">
         <source src="#">
       </video>
-
     </div>
     <p class="production-process__discr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
       как появляются наши товары.</p>
@@ -122,19 +122,21 @@
 </section>
 <section class="modal modal--closed">
   <div class="modal__wrapper">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p class="modal__text">Выберите размер:</p>
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
-      <div class="modal__input-wrapper">
-        <label for="input-check-S" class="modal__label-1">S</label>
-        <input class="modal__form-size modal__form-size--active" id="input-check-S" type="radio" name="size" value="S" checked>
-        <label for="input-check-M" class="modal__label-2">M</label>
-        <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
-        <label for="input-check-L" class="modal__label-3">L</label>
-        <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
-      </div>
-      <input class="modal__form-send" type="submit" value="Добавить">
-    </form>
+    <div class="modal__inner">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="modal__input-wrapper">
+          <input class="modal__form-size" id="input-check-S" type="radio" name="size" value="S" checked>
+          <label for="input-check-S" class="modal__label modal__label--S">S</label>
+          <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
+          <label for="input-check-M" class="modal__label modal__label--M">M</label>
+          <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
+          <label for="input-check-L" class="modal__label modal__label--L">L</label>
+        </div>
+        <input class="modal__form-send" type="submit" value="Добавить">
+      </form>
+    </div>
   </div>
 </section>
 <footer class="page-footer">

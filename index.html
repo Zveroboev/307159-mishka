@@ -9,7 +9,7 @@
 <body class="theme">
 <header class="page-header">
   <div class="page-header__wrapper theme__wrapper">
-    <h1 class="page-header__title">Mishka - Милые штуки ручной работы для дома</h1>
+    <h1 class="page-header__title page-header__title--hidden">Mishka - Милые штуки ручной работы для дома</h1>
     <ul class="header-top">
       <li class="header-top__logo theme__header-top-inner">
         <img class="header-top__logo-img" src="/img/logo-mobile.svg" alt="Mishka">
@@ -98,10 +98,10 @@
       <img src="/img/triple-set-mobile@1x.jpg" alt="Week item" width="260" height="315">
     </div>
     <span class="week-item__price">Цена: 990 руб.</span>
-    <a href="modal.html" class="week-item__btn btn" target="_blank">Заказать</a>
+    <a href="modal.html" class="week-item__btn btn" id="openModal" target="_blank">Заказать</a>
   </div>
 </section>
-<section class="modal">
+<section class="modal modal--closed">
   <div class="modal__wrapper">
     <div class="modal__inner">
       <h3 class="modal__title">Добавить в корзину</h3>
@@ -129,7 +129,7 @@
         <li class="about-us__item2 theme__about-item">Скандинавский стиль по российской цене</li>
         <li class="about-us__item3 theme__about-item">Увеличивает лайки на фотографиях</li>
       </ul>
-      <ul class="about-is__description-right theme__about-description">
+      <ul class="about-us__description-right theme__about-description">
         <li class="about-us__item4 theme__about-item">Связано вручную с любовью и умилением</li>
         <li class="about-us__item5 theme__about-item">Поддержка отечественного производителя</li>
         <li class="about-us__item6 theme__about-item">Поставляется в подарочной упаковке</li>
@@ -172,12 +172,13 @@
 </section>
 <section class="contacts">
   <div class="contacts__wrapper theme__wrapper">
-    <h4 class="contacts__title">Контакты</h4>
+    <h3 class="contacts__title">Контакты</h3>
     <table class="contacts__adress-table adress-table">
       <tr class="adress-table__table-row">
         <td class="adress-table__table-data">e-mail:</td>
-        <td class="adress-table__table-data"><span
-          class="adress-table__table-data--underline">info@mimimishkashop.ru</span></td>
+        <td class="adress-table__table-data">
+          <span class="adress-table__table-data-inner">info@mimimishkashop.ru</span>
+        </td>
       </tr>
       <tr class="adress-table__table-row">
         <td class="adress-table__table-data">адрес:</td>
