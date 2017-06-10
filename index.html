@@ -101,21 +101,23 @@
     <a href="modal.html" class="week-item__btn btn" target="_blank">Заказать</a>
   </div>
 </section>
-<section class="modal modal--closed">
+<section class="modal">
   <div class="modal__wrapper">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p class="modal__text">Выберите размер:</p>
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
-      <div class="modal__input-wrapper">
-        <label for="input-check-S" class="modal__label-1">S</label>
-        <input class="modal__form-size modal__form-size--active" id="input-check-S" type="radio" name="size" value="S" checked>
-        <label for="input-check-M" class="modal__label-2">M</label>
-        <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
-        <label for="input-check-L" class="modal__label-3">L</label>
-        <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
-      </div>
-      <input class="modal__form-send" type="submit" value="Добавить">
-    </form>
+    <div class="modal__inner">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="modal__input-wrapper">
+          <input class="modal__form-size" id="input-check-S" type="radio" name="size" value="S" checked>
+          <label for="input-check-S" class="modal__label modal__label--S">S</label>
+          <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
+          <label for="input-check-M" class="modal__label modal__label--M">M</label>
+          <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
+          <label for="input-check-L" class="modal__label modal__label--L">L</label>
+        </div>
+        <input class="modal__form-send" type="submit" value="Добавить">
+      </form>
+    </div>
   </div>
 </section>
 <section class="about-us">
