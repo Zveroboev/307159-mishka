@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 
   @media #{$tablet-widths} {
     flex-direction: row;
@@ -30,7 +31,7 @@
   }
 
   @media #{$tablet-widths} {
-    width: 250px;
+    width: 255px;
   }
 }
 
@@ -42,17 +43,12 @@
   display: block;
   width: 0;
   height: 0;
-  position: relative;
   outline: none;
 
   &::after {
-    content: "";
+    content: url("/img/icon-tick.svg");
     position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: $green-color;
-    border-radius: 50%;
-    left: 14px;
-    top: 14px;
+    left: 6px;
+    top: 12px;
   }
 }
