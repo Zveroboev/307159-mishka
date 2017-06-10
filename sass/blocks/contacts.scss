@@ -51,8 +51,12 @@
 }
 
 .contacts__map {
-  margin-bottom: 30px;
   position: relative;
+  width: 320px;
+  height: 457px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #f1f1f1;
 
   &::before {
     position: absolute;
@@ -63,30 +67,25 @@
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   @media #{$tablet-widths} {
+    width: 768px;
+    height: 457px;
 
     &::before {
       top: 36%;
       left: 45%;
     }
 
-    img {
-      width: 758px;
-      height: 457px;
-    }
   }
   @media #{$desktop-widths} {
     position: absolute;
     right: 50px;
     top: 0;
-
-    img {
-      width: 525px;
-      height: 457px;
-    }
+    width: 525px;
+    height: 457px;
   }
 }
 
