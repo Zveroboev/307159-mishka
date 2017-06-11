@@ -16,5 +16,3 @@ function openOrCloseMenu() {
     navToggler.setAttribute('alt', 'Открыть меню');
   }
 }
-
-
