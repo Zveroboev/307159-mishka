@@ -13,6 +13,14 @@
   }
 }
 
+.main-nav--closed {
+
+  @media #{$mobile-widths-only} {
+    display: none;
+  }
+
+}
+
 .main-nav__list-1 {
 
   @media #{$tablet-widths} {
