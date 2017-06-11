@@ -1,0 +1,142 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  transition: opacity 400ms ease-in;
+
+  display: flex;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    justify-content: center;
+  }
+}
+
+.modal--closed {
+  display: none;
+}
+
+.modal__wrapper {
+  width: 320px;
+  height: 340px;
+  background-color: #fff;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  box-shadow: 0 10px 30px rgba(#c6c6c6, 0.9);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+
+  @media #{$tablet-widths} {
+    width: 570px;
+    height: 340px;
+    border: 1px solid #c7c7c7;
+    flex-basis: auto;
+  }
+}
+
+.modal__inner {
+  width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+
+  @media #{$tablet-widths} {
+    width: 355px;
+  }
+}
+
+.modal__title {
+  @include text-decoration(25px, 30px);
+  margin: 0;
+  margin-top: 35px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(30px, 57px);
+  }
+}
+
+.modal__text {
+  @include text-decoration(15px, 30px);
+  margin: 0;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(17px, 30px);
+  }
+}
+
+.modal__form {
+  margin-bottom: 45px;
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__label {
+  @include text-decoration(17px, 16px);
+  font-weight: bold;
+  width: 82px;
+  height: 62px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  margin-bottom: 31px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media #{$tablet-widths} {
+    width: 110px;
+  }
+}
+
+.modal__form-size {
+  display: none;
+}
+
+.modal__form-size[value="S"]:checked ~ .modal__label--S {
+  border-color: $green-color;
+}
+
+.modal__form-size[value="M"]:checked ~ .modal__label--M {
+  border-color: $green-color;
+}
+
+.modal__form-size[value="L"]:checked ~ .modal__label--L {
+  border-color: $green-color;
+}
+
+.modal__form-send {
+  @include text-decoration(17px, 16px);
+  font-weight: bold;
+  background-color: $green-color;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  height: 42px;
+
+  align-self: stretch;
+  flex-grow: 1;
+
+  @media #{$tablet-widths} {
+    height: 52px;
+  }
+}

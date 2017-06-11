@@ -9,43 +9,56 @@
 <body class="theme">
 <header class="page-header">
   <div class="page-header__wrapper theme__wrapper">
-    <h1 class="page-header__title">Mishka - Милые штуки ручной работы для дома</h1>
+    <h1 class="page-header__title page-header__title--hidden">Mishka - Милые штуки ручной работы для дома</h1>
     <ul class="header-top">
       <li class="header-top__logo theme__header-top-inner">
-        <a href="index.html" class="heder-top__logo-link">
+        <a href="index.html" class="header-top__logo-link">
           <img class="header-top__logo-img" src="/img/logo-mobile.svg" alt="Mishka">
         </a>
       </li>
       <li class="header-top__toggler theme__header-top-inner">
-        <img class="header-top__toggler-img" src="/img/icon-menu-open.svg" alt="Открыть меню">
+        <img class="header-top__toggler-img" src="/img/icon-menu-close.svg" alt="Открыть меню">
       </li>
     </ul>
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav" id="main-nav">
     <ul class="main-nav__list-1 theme__main-nav-list">
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item-link  main-nav__item-link--catalog" href="catalog.html">Каталог товаров</a>
         </div>
       </li>
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item-link main-nav__item-link--form" href="form.html">Вязание на заказ</a>
         </div>
       </li>
     </ul>
     <ul class="main-nav__list-2 theme__main-nav-list">
-      <li class="main-nav__item">
+      <li class="main-nav__item main-nav__item--search">
         <div class="main-nav__item-wrapper theme__wrapper">
           <input type="search" placeholder="Поиск по сайту" class="main-nav__item-input">
         </div>
       </li>
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__item-link main-nav__item-link--basket" href="#">Корзина: пока пуста</a>
         </div>
       </li>
     </ul>
+    <ul class="main-nav__list-3 theme__main-nav-list">
+      <li class="main-nav__item">
+        <div class="main-nav__item-wrapper theme__wrapper">
+          <a class="main-nav__item-link  main-nav__item-link--new" href="#">Новые поступления</a>
+        </div>
+      </li>
+      <li class="main-nav__item">
+        <div class="main-nav__item-wrapper theme__wrapper">
+          <a class="main-nav__item-link main-nav__item-link--sale" href="#">Распродажа</a>
+        </div>
+      </li>
+    </ul>
+    <span class="main-nav__note">Бесплатная доставка по России</span>
   </nav>
 </header>
 <section class="page-name theme__page-name">
@@ -54,10 +67,12 @@
   </div>
 </section>
 <section class="catalog">
+  <h3 class="catalog__title catalog__title--hidden">Выберите товар</h3>
   <div class="catalog__items-wrapper theme__wrapper">
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-1-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-1-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-1-desktop.png">
         <img src="/img/photo-1-mobile@1x.jpg" alt="item photo" width="260" height="195">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -68,7 +83,8 @@
     </div>
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-2-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-2-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-2-desktop.png">
         <img src="/img/photo-2-mobile@1x.jpg" alt="item photo" height="195" width="260">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -79,7 +95,8 @@
     </div>
     <div class="catalog__item catalog-item">
       <picture class="catalog-item__photo">
-        <source media="(min-width: 768px)" srcset="/img/photo-3-tablet.png">
+        <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/photo-3-tablet.png">
+        <source media="(min-width: 1150px)" srcset="/img/photo-3-desktop.png">
         <img src="/img/photo-3-mobile@1x.jpg" alt="item photo" height="195" width="260">
       </picture>
       <p class="catalog-item__text-wrapper">
@@ -93,12 +110,33 @@
 <section class="production-process">
   <div class="production-process__wrapper theme__wrapper">
     <h3 class="production-process__title">Процесс производства</h3>
-    <video class="production-process_video" controls="controls" poster="#">
-      <source src="#">
-    </video>
+    <div class="production-process__video">
+      <video src="#" class="production-process__video-inner" controls="controls" poster="#">
+        <source src="#">
+      </video>
+    </div>
     <p class="production-process__discr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
       как появляются наши товары.</p>
     <a href="modal.html" class="production-process__order btn" target="_blank">Сделать заказ</a>
+  </div>
+</section>
+<section class="modal modal--closed">
+  <div class="modal__wrapper">
+    <div class="modal__inner">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="modal__input-wrapper">
+          <input class="modal__form-size" id="input-check-S" type="radio" name="size" value="S" checked>
+          <label for="input-check-S" class="modal__label modal__label--S">S</label>
+          <input class="modal__form-size" id="input-check-M" type="radio" name="size" value="M">
+          <label for="input-check-M" class="modal__label modal__label--M">M</label>
+          <input class="modal__form-size" id="input-check-L" type="radio" name="size" value="L">
+          <label for="input-check-L" class="modal__label modal__label--L">L</label>
+        </div>
+        <input class="modal__form-send" type="submit" value="Добавить">
+      </form>
+    </div>
   </div>
 </section>
 <footer class="page-footer">
@@ -107,9 +145,9 @@
       <img src="/img/logo-mobile.svg" alt="Logo">
     </div>
     <div class="footer-social theme__footer-inner">
-      <a href="#" class="footer-social__item footer-social__item--vk">Мы в Вконтакте</a>
+      <a href="#" class="footer-social__item footer-social__item--insta">Мы в Инстаграмме</a>
       <a href="#" class="footer-social__item footer-social__item--fb">Мы в Фейсбуке</a>
-      <a href="#" class="footer-social__item footer-social__item--in">Мы в Инстаграмме</a>
+      <a href="#" class="footer-social__item footer-social__item--twitter">Мы в Твиттере</a>
     </div>
     <div class="footer-copyright theme__footer-inner">
       <a href="https://htmlacademy.ru/" class="footer-copyright__text">Разработано</a>
@@ -119,5 +157,7 @@
     </div>
   </div>
 </footer>
+
+<script src="/js/main.js"></script>
 </body>
 </html>

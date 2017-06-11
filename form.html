@@ -9,43 +9,56 @@
 <body class="theme">
 <header class="page-header">
   <div class="page-header__wrapper theme__wrapper">
-    <h1 class="page-header__title">Mishka - Милые штуки ручной работы для дома</h1>
+    <h1 class="page-header__title page-header__title--hidden">Mishka - Милые штуки ручной работы для дома</h1>
     <ul class="header-top">
       <li class="header-top__logo theme__header-top-inner">
-        <a href="index.html" class="heder-top__logo-link">
+        <a href="index.html" class="header-top__logo-link">
           <img class="header-top__logo-img" src="/img/logo-mobile.svg" alt="Mishka">
         </a>
       </li>
       <li class="header-top__toggler theme__header-top-inner">
-        <img class="header-top__toggler-img" src="/img/icon-menu-open.svg" alt="Открыть меню">
+        <img class="header-top__toggler-img" src="/img/icon-menu-close.svg" alt="Открыть меню">
       </li>
     </ul>
   </div>
-  <nav class="main-nav">
+  <nav class="main-nav" id="main-nav">
     <ul class="main-nav__list-1 theme__main-nav-list">
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item-link  main-nav__item-link--catalog" href="catalog.html">Каталог товаров</a>
         </div>
       </li>
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item-link main-nav__item-link--form" href="form.html">Вязание на заказ</a>
         </div>
       </li>
     </ul>
     <ul class="main-nav__list-2 theme__main-nav-list">
-      <li class="main-nav__item">
+      <li class="main-nav__item main-nav__item--search">
         <div class="main-nav__item-wrapper theme__wrapper">
           <input type="search" placeholder="Поиск по сайту" class="main-nav__item-input">
         </div>
       </li>
       <li class="main-nav__item">
         <div class="main-nav__item-wrapper theme__wrapper">
-          <a class="main-nav__item-link" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__item-link main-nav__item-link--basket" href="#">Корзина: пока пуста</a>
         </div>
       </li>
     </ul>
+    <ul class="main-nav__list-3 theme__main-nav-list">
+      <li class="main-nav__item">
+        <div class="main-nav__item-wrapper theme__wrapper">
+          <a class="main-nav__item-link  main-nav__item-link--new" href="#">Новые поступления</a>
+        </div>
+      </li>
+      <li class="main-nav__item">
+        <div class="main-nav__item-wrapper theme__wrapper">
+          <a class="main-nav__item-link main-nav__item-link--sale" href="#">Распродажа</a>
+        </div>
+      </li>
+    </ul>
+    <span class="main-nav__note">Бесплатная доставка по России</span>
   </nav>
 </header>
 <section class="page-name theme__page-name">
@@ -63,36 +76,57 @@
       <div class="form__type form-type theme__form">
         <h3 class="form__legend theme__form-title">Тип</h3>
         <input class="form-type__inner" type="radio" name="type" id="type-1" value="type-1" checked>
-        <label class="form-type__label" for="type-1">Аксессуа для интерьера</label>
+        <label class="form-type__label" for="type-1" onmousedown="return false">Аксессуа для интерьера</label>
         <input class="form-type__inner" type="radio" name="type" id="type-2" value="type-2">
-        <label class="form-type__label" for="type-2">Детская игрушка</label>
+        <label class="form-type__label" for="type-2" onmousedown="return false">Детская игрушка</label>
       </div>
     </div>
     <div class="to-order__form-color theme__form-wrapper">
       <div class="form__color form-color theme__form">
         <h3 class="form__legend theme__form-title">Цвет</h3>
-        <input type="checkbox" class="form-color__inner" name="white" id="white" checked>
-        <label class="form-color__label" for="white">Белый</label>
-        <input type="checkbox" class="form-color__inner" name="gray" id="gray" checked>
-        <label class="form-color__label" for="gray">Серый</label>
-        <input type="checkbox" class="form-color__inner" name="tiffane" id="tiffane">
-        <label class="form-color__label" for="tiffane">&#171;Тиффани&#187;</label>
-        <input type="checkbox" class="form-color__inner" name="black" id="black">
-        <label class="form-color__label" for="black">Черный</label>
-        <input type="checkbox" class="form-color__inner" name="pink" id="pink">
-        <label class="form-color__label" for="pink">Розовый</label>
-        <input type="checkbox" class="form-color__inner" name="orange" id="orange">
-        <label class="form-color__label" for="orange">Оранжевый</label>
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">Белый</span>
+          <input type="checkbox" class="form-color__inner" name="white" id="white" checked>
+        </label>
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">Серый</span>
+          <input type="checkbox" class="form-color__inner" name="gray" id="gray" checked>
+        </label>
+
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">&#171;Тиффани&#187;</span>
+          <input type="checkbox" class="form-color__inner" name="tiffane" id="tiffane">
+        </label>
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">Черный</span>
+          <input type="checkbox" class="form-color__inner" name="black" id="black">
+        </label>
+
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">Розовый</span>
+          <input type="checkbox" class="form-color__inner" name="pink" id="pink">
+        </label>
+
+
+        <label class="form-color__label" onmousedown="return false">
+          <span class="form-color__label-text">Оранжевый</span>
+          <input type="checkbox" class="form-color__inner" name="orange" id="orange">
+        </label>
       </div>
     </div>
     <div class="to-order__form-full-name theme__form-wrapper">
       <div class="form__full-name form-full-name theme__form">
         <h3 class="form__legend theme__form-title">ФИО</h3>
-        <label for="name" class="form-full-name__label">Имя:</label>
+        <label for="name" class="form-full-name__label" onmousedown="return false">Имя:</label>
         <input type="text" class="form-full-name__name theme__input form-full-name__input" name="name" id="name" required placeholder="Введите ваше имя*" autocomplete="on">
-        <label for="surname" class="form-full-name__label">Фамилия:</label>
+        <label for="surname" class="form-full-name__label" onmousedown="return false">Фамилия:</label>
         <input type="text" class="form-full-name__surname theme__input form-full-name__input" name="surname" id="surname" required placeholder="Укажите фамилию*" autocomplete="on">
-        <label for="patronymic" class="form-full-name__label">Отчество:</label>
+        <label for="patronymic" class="form-full-name__label" onmousedown="return false">Отчество:</label>
         <input type="text" class="form-full-name__patronymic theme__input form-full-name__input" name="patronymic" id="patronymic" placeholder="Отчество, если желаете" autocomplete="on">
       </div>
     </div>
@@ -126,9 +160,9 @@
       <img src="/img/logo-mobile.svg" alt="Logo">
     </div>
     <div class="footer-social theme__footer-inner">
-      <a href="#" class="footer-social__item footer-social__item--vk">Мы в Вконтакте</a>
+      <a href="#" class="footer-social__item footer-social__item--insta">Мы в Инстаграмме</a>
       <a href="#" class="footer-social__item footer-social__item--fb">Мы в Фейсбуке</a>
-      <a href="#" class="footer-social__item footer-social__item--in">Мы в Инстаграмме</a>
+      <a href="#" class="footer-social__item footer-social__item--twitter">Мы в Твиттере</a>
     </div>
     <div class="footer-copyright theme__footer-inner">
       <a href="https://htmlacademy.ru/" class="footer-copyright__text">Разработано</a>
@@ -138,5 +172,7 @@
     </div>
   </div>
 </footer>
+
+<script src="/js/main.js"></script>
 </body>
 </html>

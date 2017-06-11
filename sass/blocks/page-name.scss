@@ -1,10 +1,18 @@
 .page-name {
   background-color: $bg-color;
   min-width: 320px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 80px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 130px;
+  }
 
   .page-name__wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }

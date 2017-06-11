@@ -9,11 +9,10 @@
   }
 }
 
-@mixin text-decoration ($fonts-size: 16px, $lient-height: 27px){
+@mixin text-decoration($fonts-size: 16px, $lient-height: 27px) {
   font-size: $fonts-size;
   line-height: $lient-height;
 }
-
 
 @mixin container() {
   min-width: 320px;
@@ -24,7 +23,7 @@
   }
 
   @media #{$desktop-widths} {
-    width: 1250px;
+    width: 1150px;
   }
 }
 
@@ -39,6 +38,6 @@
 
   @media #{$desktop-widths} {
     width: 1050px;
-    margin: 0 100px;
+    margin: 0 50px;
   }
 }

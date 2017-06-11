@@ -1,4 +1,6 @@
 .form-color {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -8,18 +10,48 @@
   }
 }
 
-  .form-color__label {
-    @include form-elements-style;
-    margin-bottom: 10px;
-    padding-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.form-color__label {
+  @include form-elements-style;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-    @media #{$tablet-widths} {
-      flex-basis: 170px;
-    }
+  position: relative;
+  cursor: pointer;
+
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #454545;
+    left: 0;
+    top: 0;
   }
 
-  .form-color__inner {
-    display: none;
+  @media #{$tablet-widths} {
+    width: 255px;
   }
+}
+
+.form-color__inner {
+  display: none;
+}
+
+.form-color__inner:checked {
+  display: block;
+  width: 0;
+  height: 0;
+  outline: none;
+
+  &::after {
+    content: url("/img/icon-tick.svg");
+    position: absolute;
+    left: 6px;
+    top: 12px;
+  }
+}
