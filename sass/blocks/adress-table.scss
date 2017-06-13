@@ -35,4 +35,12 @@
 
 .adress-table__table-data-inner {
   border-bottom: 1px solid $green-color;
+
+  &:hover {
+    color: $green-color;
+  }
+  &:active {
+    color: rgba($green-color, 0.3);
+    border-bottom: 1px solid rgba($green-color, 0.3);
+  }
 }

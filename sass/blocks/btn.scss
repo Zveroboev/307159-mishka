@@ -11,4 +11,12 @@
   padding-top: 13px;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #444444;
+    color: #fff;
+  }
+  &:active {
+    color: rgba(#fff, 0.3);
+  }
 }

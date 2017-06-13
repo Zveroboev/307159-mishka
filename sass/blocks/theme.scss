@@ -77,10 +77,6 @@
     opacity: 0.2;
   }
 
-  &:hover {
-    height: 105px;
-  }
-
   @media #{$tablet-widths} {
     @include text-decoration(20px, 30px);
     height: 115px;
@@ -150,8 +146,17 @@
   height: 52px;
   font-size: 0;
   line-height: 0;
+  outline: none;
 
   flex-basis: 130px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media #{$tablet-widths} {
     border: none;
