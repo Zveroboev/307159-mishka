@@ -14,6 +14,7 @@
   @media #{$tablet-widths} {
     justify-content: center;
   }
+  cursor: pointer;
 }
 
 .modal--closed {
@@ -40,6 +41,7 @@
     border: 1px solid #c7c7c7;
     flex-basis: auto;
   }
+  cursor: auto;
 }
 
 .modal__inner {
@@ -106,6 +108,8 @@
   @media #{$tablet-widths} {
     width: 110px;
   }
+
+  cursor: pointer;
 }
 
 .modal__form-size {
@@ -139,4 +143,6 @@
   @media #{$tablet-widths} {
     height: 52px;
   }
+
+  cursor: pointer;
 }
