@@ -34,5 +34,20 @@
 
   @media #{$tablet-widths} {
     display: block;
+
+    &:hover {
+
+      .page-footer__svg {
+        fill: $green-color;
+      }
+    }
+    &:active {
+
+      .page-footer__svg {
+        fill-opacity: 0.3;
+      }
+    }
   }
 }
+
+

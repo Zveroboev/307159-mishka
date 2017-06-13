@@ -23,9 +23,11 @@
   align-items: center;
 
   @media #{$tablet-widths} {
-    flex-basis: 320px;
     height: 88px;
     border-right: none;
+
+    justify-content: flex-start;
+    flex-basis: 320px;
   }
   @media #{$desktop-widths} {
     flex-basis: auto;

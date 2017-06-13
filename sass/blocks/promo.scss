@@ -1,8 +1,18 @@
 .promo {
   min-width: 320px;
   background-color: #fafafa;
-
+  position: relative;
+  border-top: 1px solid #e7e7e7;
   margin-bottom: 30px;
+
+  @media #{$tablet-widths} {
+
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
   @media #{$desktop-widths} {
     margin-bottom: 70px;
   }
@@ -27,7 +37,6 @@
   @media #{$tablet-widths} {
     background-image: url('/img/hero-desktop@1x.jpg');
     background-size: cover;
-    border-top: 1px solid #e7e7e7;
 
     margin: 0 auto;
     height: 745px;
