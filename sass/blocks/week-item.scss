@@ -19,9 +19,6 @@
   position: relative;
 
 
-  @media #{$tablet-widths} {
-    //padding-top: 70px;
-  }
   @media #{$desktop-widths} {
     margin-top: 70px;
     padding-left: 175px;
@@ -112,6 +109,8 @@
   margin-bottom: 30px;
 
   align-self: stretch;
+  display: flex;
+  justify-content: center;
 
   @media #{$tablet-widths} {
     position: absolute;
@@ -123,17 +122,8 @@
   }
 
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-
-    @media #{$tablet-widths} {
-      width: 333px;
-      height: 404px;
-    }
-    @media #{$desktop-widths} {
-      width: 525px;
-      height: 636px;
-    }
   }
 }
 

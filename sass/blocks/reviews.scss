@@ -4,9 +4,15 @@
   @media #{$tablet-widths} {
     background: url('/img/review@1x.jpg') left no-repeat;
     margin-bottom: 50px;
+
+    @media #{$retina} {
+      background: url('/img/review@2x.jpg') left no-repeat;
+      background-size: 350px;
+    }
   }
   @media #{$desktop-widths} {
     background-position-x: 50px;
+
   }
 }
 

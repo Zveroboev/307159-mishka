@@ -94,9 +94,11 @@
         <td class="week-item__table-data">15 см</td>
       </tr>
     </table>
-    <div class="week-item__photo">
-      <img src="/img/triple-set-mobile@1x.jpg" alt="Week item" width="260" height="315">
-    </div>
+    <picture class="week-item__photo">
+      <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg 1x, /img/triple-set-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg 1x, /img/triple-set-tablet@2x.jpg 2x">
+      <img src="/img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@2x.jpg 2x" alt="Week item">
+    </picture>
     <span class="week-item__price">Цена: 990 руб.</span>
     <a href="modal.html" class="week-item__btn btn" id="openModal" target="_blank">Заказать</a>
   </div>
@@ -187,9 +189,9 @@
     </table>
   </div>
   <picture class="contacts__map">
-    <source media="(min-width: 768px) and (max-width: 1149px)" srcset="/img/map-tablet@1x.jpg">
-    <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg">
-    <img src="/img/map-mobile@1x.jpg" alt="Map" width="320" height="457">
+    <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg 1x, /img/map-desktop@2x.jpg 2x">
+    <source media="(min-width: 768px)" srcset="/img/map-tablet@1x.jpg 1x, /img/map-tablet@2x.jpg 2x">
+    <img src="/img/map-mobile@1x.jpg" srcset="/img/map-mobile@2x.jpg 2x" alt="Map">
   </picture>
   <a class="contacts__write-btn btn" href="#">Напишите нам</a>
 </section>
