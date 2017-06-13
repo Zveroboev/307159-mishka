@@ -70,6 +70,7 @@
 
   @media #{$tablet-widths} {
     flex-direction: row;
+    align-items: flex-end;
   }
 }
 
@@ -80,7 +81,33 @@
     content: url("/img/icon-interior.svg");
     right: 25px;
     top: 20px;
+    opacity: 0.5;
   }
+
+  &:hover {
+    background-color: #59d5bc;
+
+    &::after {
+      opacity: 0.7;
+      top: 15px;
+    }
+
+    .promo__link-text {
+      position: relative;
+      bottom: 5px;
+    }
+  }
+
+  &:active {
+
+    &::after {
+      opacity: 0.3;
+    }
+    .promo__link-text {
+      color: rgba(#fff, 0.3);
+    }
+  }
+
 }
 
 .promo__link-2 {
@@ -90,6 +117,30 @@
     content: url("/img/icon-toy.svg");
     right: 17px;
     top: 20px;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+
+    &::after {
+      opacity: 0.7;
+      top: 15px;
+    }
+    .promo__link-text {
+      position: relative;
+      bottom: 5px;
+    }
+  }
+  &:active {
+
+    &::after {
+      opacity: 0.3;
+    }
+
+    .promo__link-text {
+      color: rgba(#fff, 0.3);
+    }
   }
 }
 

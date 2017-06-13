@@ -77,9 +77,17 @@
     opacity: 0.2;
   }
 
+  &:hover {
+    height: 105px;
+  }
+
   @media #{$tablet-widths} {
     @include text-decoration(20px, 30px);
     height: 115px;
+
+    &:hover {
+      height: 120px;
+    }
   }
 }
 

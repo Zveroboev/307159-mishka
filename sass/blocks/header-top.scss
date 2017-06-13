@@ -18,6 +18,9 @@
 }
 
 .header-top__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media #{$tablet-widths} {
     flex-basis: 320px;
@@ -29,10 +32,33 @@
   }
 }
 
+.header-top__logo-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header-top__logo-inner--not-index {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .header-top__logo-img {
 
   @media #{$tablet-widths} {
-    padding-top: 22px;
+    width: 113px;
+    height: 46px;
+  }
+  @media #{$desktop-widths} {
+    width: 149px;
+    height: 72px;
   }
 }
 
