@@ -63,6 +63,9 @@
   width: 260px;
   height: 150px;
   margin: 0 auto;
+  position: relative;
+
+  display: flex;
 
   @media #{$tablet-widths} {
     width: 668px;
@@ -81,17 +84,27 @@
   }
 }
 
-.production-process__video-inner {
-  width: 260px;
-  height: 150px;
 
-  @media #{$tablet-widths} {
-    width: 668px;
-    height: 455px;
+.production-process__video-inner {
+  width: 100%;
+  height: auto;
+}
+
+.production-process__video-svg {
+  position: absolute;
+  z-index: 5;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  &:hover {
+    width: 121px;
+    height: 92px;
   }
-  @media #{$desktop-widths} {
-    width: 682px;
-    height: 455px;
+
+  &:active {
+    opacity: 0.7;
+    width: 81px;
+    height: 62px;
   }
 }
 
