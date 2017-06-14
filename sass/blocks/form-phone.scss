@@ -1,9 +1,18 @@
-.form__phone {
+.form-phone {
   display: flex;
   flex-direction: column;
 }
 
+.form-phone__number-wrapper {
+  display: flex;
+}
+
 .form-phone__number {
+  outline: none;
+  color: $gray-color;
+  position: relative;
+
+  flex-grow: 1;
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
@@ -18,3 +27,36 @@
     background-color: $bg-color;
   }
 }
+
+.form-phone__svg {
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  opacity: 0.3;
+  z-index: 1;
+
+  @media #{$tablet-widths} {
+    top: 5px;
+  }
+}
+
+.form-phone__svg-path {
+  fill: $green-color;
+}
+
+
+.form-phone__number-wrapper:hover {
+
+   .form-phone__svg {
+     opacity: 1;
+   }
+   .form-phone__svg-path {
+     fill: $green-color;
+   }
+ }
+
+.form-phone__number:focus ~ .form-phone__svg {
+  opacity: 1;
+}
+
+

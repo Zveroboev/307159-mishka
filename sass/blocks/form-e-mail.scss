@@ -3,7 +3,14 @@
   flex-direction: column;
 }
 
+.form-e-mail__adress-wrapper {
+  display: flex;
+}
+
 .form-e-mail__adress {
+  outline: none;
+  color: $gray-color;
+  flex-grow: 1;
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);

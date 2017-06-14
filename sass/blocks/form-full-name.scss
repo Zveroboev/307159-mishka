@@ -22,10 +22,16 @@
 .form-full-name__input {
   flex-grow: 1;
   flex-basis: 70%;
+  outline: none;
+  color: $gray-color;
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
   }
+}
+
+.form-full-name__input:hover {
+    border-bottom: 2px solid $green-color;
 }
 
 .form-full-name::placeholder {
