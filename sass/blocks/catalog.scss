@@ -40,4 +40,8 @@
   @media #{$desktop-widths} {
     width: 315px;
   }
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(#c6c6c6, 0.9);
+  }
 }

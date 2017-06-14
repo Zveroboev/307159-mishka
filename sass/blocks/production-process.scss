@@ -17,6 +17,10 @@
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    box-shadow: 0 10px 30px rgba(#c6c6c6, 0.9);
+  }
+
   @media #{$desktop-widths} {
     height: 455px;
     flex-wrap: wrap;
