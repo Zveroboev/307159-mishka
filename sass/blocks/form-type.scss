@@ -33,6 +33,20 @@
   }
 }
 
+.form-type__label:hover {
+
+  &:before {
+    border: 2px solid $green-color;
+  }
+}
+
+.form-type__label:active {
+
+  &:before {
+    border: 2px solid rgba($black-color, 0.3);
+  }
+}
+
 .form-type__inner {
   display: none;
 }

@@ -38,6 +38,20 @@
   }
 }
 
+.form-color__label:hover {
+
+  &:before {
+    border: 2px solid $green-color;
+  }
+}
+
+.form-color__label:active {
+
+  &:before {
+    border: 2px solid rgba($black-color, 0.3);
+  }
+}
+
 .form-color__inner {
   display: none;
 }
