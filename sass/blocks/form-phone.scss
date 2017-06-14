@@ -40,16 +40,12 @@
   }
 }
 
-
-
 .form-phone__number:hover ~ .form-phone__svg {
-     opacity: 1;
-     fill: $green-color;
- }
+  opacity: 1;
+  fill: $green-color;
+}
 
 .form-phone__number:focus ~ .form-phone__svg {
   opacity: 1;
   fill: $green-color;
 }
-
-
