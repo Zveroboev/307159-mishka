@@ -34,8 +34,7 @@
   justify-content: space-between;
 
   @media #{$retina} {
-    background-image: url('/img/hero-mobile@2x.jpg');
-    background-size: inherit;
+    background-image: url('/img/hero-mobile@2x.jpg') no-repeat center/hover;
   }
 
   @media #{$tablet-widths} {
