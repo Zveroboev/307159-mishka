@@ -6,6 +6,9 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 50px;
+  }
+
+  @media #{$tablet-widths-only} {
 
     &::after {
       content: "";
@@ -17,6 +20,7 @@
       background: url(/img/bg-zigzag-line.svg) repeat-x center;
     }
   }
+
   @media #{$desktop-widths} {
     margin-bottom: 70px;
   }
@@ -34,6 +38,16 @@
     padding-left: 175px;
     box-sizing: border-box;
     padding-top: 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+    }
   }
 }
 

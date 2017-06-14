@@ -6,6 +6,14 @@
     background: url('/img/review@1x.jpg') left no-repeat;
     margin-bottom: 50px;
 
+    @media #{$retina} {
+      background: url('/img/review@2x.jpg') left no-repeat;
+      background-size: 350px;
+    }
+  }
+
+  @media #{$tablet-widths-only} {
+
     &::after {
       content: "";
       position: absolute;
@@ -15,15 +23,10 @@
       height: 34px;
       background: url(/img/bg-zigzag-line.svg) repeat-x center;
     }
-
-    @media #{$retina} {
-      background: url('/img/review@2x.jpg') left no-repeat;
-      background-size: 350px;
-    }
   }
+
   @media #{$desktop-widths} {
     background-position-x: 50px;
-
   }
 }
 
@@ -37,6 +40,16 @@
   @media #{$desktop-widths} {
     box-sizing: border-box;
     padding-left: 170px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+    }
   }
 }
 
