@@ -25,3 +25,26 @@
     background-color: $bg-color;
   }
 }
+
+.form-e-mail__svg {
+  position: absolute;
+  right: 5px;
+  top: 50px;
+  opacity: 0.3;
+  z-index: 1;
+
+  @media #{$tablet-widths} {
+    top: 5px;
+  }
+}
+
+.form-e-mail__adress:hover ~ .form-e-mail__svg {
+  opacity: 1;
+  fill: $green-color;
+}
+
+.form-e-mail__adress:focus ~ .form-e-mail__svg {
+  opacity: 1;
+  fill: $green-color;
+}
+
