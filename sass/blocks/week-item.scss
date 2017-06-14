@@ -4,8 +4,18 @@
   @include container();
   margin-bottom: 30px;
 
-  @media #{$desktop-widths} {
+  @media #{$tablet-widths} {
     margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+    }
   }
   @media #{$desktop-widths} {
     margin-bottom: 70px;

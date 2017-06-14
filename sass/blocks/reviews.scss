@@ -1,9 +1,20 @@
 .reviews {
   @include container();
+  position: relative;
 
   @media #{$tablet-widths} {
     background: url('/img/review@1x.jpg') left no-repeat;
     margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+    }
 
     @media #{$retina} {
       background: url('/img/review@2x.jpg') left no-repeat;
