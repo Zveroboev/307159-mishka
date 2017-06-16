@@ -37,14 +37,15 @@
 
   @media #{$desktop-widths} {
     margin-top: 70px;
-    padding-left: 175px;
+    padding-left: 172px;
     box-sizing: border-box;
-    padding-top: 70px;
+    padding-top: 54px;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -80px;
+      z-index: 1;
+      bottom: -100px;
       left: 0;
       right: 0;
       height: 34px;
@@ -62,6 +63,9 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 50px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 48px;
   }
 }
 
@@ -83,8 +87,8 @@
     line-height: 17px;
   }
   @media #{$desktop-widths} {
-    left: 50px;
-    top: 85px;
+    left: 42px;
+    top: 69px;
   }
 }
 
@@ -101,6 +105,10 @@
 
     align-self: flex-start;
   }
+  @media #{$desktop-widths} {
+    padding-left: 3px;
+    margin-bottom: 43px;
+  }
 }
 
 .week-item__prop {
@@ -115,7 +123,7 @@
   }
 
   @media #{$desktop-widths} {
-    margin-bottom: 105px;
+    margin-bottom: 113px;
   }
 }
 
@@ -169,7 +177,7 @@
     width: 290px;
   }
   @media #{$desktop-widths} {
-    @include text-decoration(20px, 24px);
+    margin-bottom: 34px;
   }
 }
 

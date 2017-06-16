@@ -12,6 +12,7 @@
   }
   @media #{$desktop-widths} {
     margin-bottom: 70px;
+    padding-top: 70px;
   }
 }
 .contacts__wrapper {
@@ -25,6 +26,7 @@
     width: 525px;
     padding-left: 170px;
     box-sizing: border-box;
+    margin-bottom: 50px;
   }
 }
 
@@ -48,10 +50,11 @@
   }
 
   @media #{$desktop-widths} {
+    @include text-decoration(53px, 57px);
 
     &::after {
-      left: -100px;
-      top: -10px;
+      left: -107px;
+      top: -8px;
     }
   }
 }

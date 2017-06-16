@@ -89,7 +89,7 @@
 
   @media #{$desktop-widths} {
     position: absolute;
-    top: 20px;
+    top: 18px;
     width: 350px;
 
     display: flex;
@@ -192,6 +192,10 @@
 
   @media #{$tablet-widths} {
     left: -50px;
+  }
+
+  @media #{$desktop-widths} {
+    left: -53px;
   }
 }
 
