@@ -4,35 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <!-- Pixel Glass
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* По умолчанию показывается мобильный макет */
-      background-image: url( "/preview/mishka-index-mobile.jpg" );
-    }
-    /* Планшет */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Планшетный макет */
-        background-image: url( "/preview/mishka-index-tablet.jpg" );
-      }
-    }
-    /* Десктоп */
-    @media ( min-width: 1150px ) {
-      HTML {
-        /* Десктопный макет */
-        background-image: url( "/preview/mishka-index-desktop.jpg" );
-      }
-    }
-  </style>
-  <link href="./node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="./node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
-
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="theme">
 <header class="page-header">
@@ -41,13 +13,13 @@
     <ul class="header-top">
       <li class="header-top__logo theme__header-top-inner">
         <picture class="header-top__logo-inner">
-          <source media="(min-width: 1150px)" srcset="/img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
-          <img class="header-top__logo-img" src="/img/logo-mobile.svg" alt="Mishka" width="86" height="35">
+          <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+          <img class="header-top__logo-img" src="./img/logo-mobile.svg" alt="Mishka" width="86" height="35">
         </picture>
       </li>
       <li class="header-top__toggler theme__header-top-inner">
-        <img class="header-top__toggler-img" src="/img/icon-menu-close.svg" alt="Открыть меню">
+        <img class="header-top__toggler-img" src="./img/icon-menu-close.svg" alt="Открыть меню">
       </li>
     </ul>
   </div>
@@ -137,9 +109,9 @@
       </tr>
     </table>
     <picture class="week-item__photo">
-      <source media="(min-width: 1150px)" srcset="/img/triple-set-desktop@1x.jpg 1x, /img/triple-set-desktop@2x.jpg 2x">
-      <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg 1x, /img/triple-set-tablet@2x.jpg 2x">
-      <img src="/img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@2x.jpg 2x" alt="Week item">
+      <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
+      <img src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Week item">
     </picture>
     <span class="week-item__price">Цена: 990 руб.</span>
     <a href="modal.html" class="week-item__btn btn" id="openModal" target="_blank">Заказать</a>
@@ -231,9 +203,9 @@
     </table>
   </div>
   <picture class="contacts__map">
-    <source media="(min-width: 1150px)" srcset="/img/map-desktop@1x.jpg 1x, /img/map-desktop@2x.jpg 2x">
-    <source media="(min-width: 768px)" srcset="/img/map-tablet@1x.jpg 1x, /img/map-tablet@2x.jpg 2x">
-    <img src="/img/map-mobile@1x.jpg" srcset="/img/map-mobile@2x.jpg 2x" alt="Map">
+    <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+    <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+    <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Map">
   </picture>
   <a class="contacts__write-btn btn" href="#">Напишите нам</a>
 </section>
@@ -294,8 +266,8 @@
     </div>
   </div>
 </footer>
-
-<script src="/js/modal.js"></script>
-<script src="/js/main-nav.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/main-nav.js"></script>
 </body>
 </html>

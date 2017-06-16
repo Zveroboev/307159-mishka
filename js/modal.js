@@ -1,7 +1,6 @@
 var openModalButton = document.getElementById('openModal');
 var closeModalButton = document.querySelector('.modal__form-send');
 var modalWindow = document.getElementById('modal');
-console.log(location.pathname);
 
 //Добавить в функцию при загрузке страницы
 openModalButton.setAttribute('href', '#');
