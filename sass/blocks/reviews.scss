@@ -82,14 +82,17 @@
   color: $gray-color;
   margin: 0;
   margin-bottom: 26px;
+  height: 270px;
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
     margin-bottom: 56px;
+    height: 120px;
   }
   @media #{$desktop-widths} {
     padding-right: 100px;
     margin-bottom: 38px;
+    height: 100px;
   }
 }
 
