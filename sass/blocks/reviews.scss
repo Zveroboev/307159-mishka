@@ -4,7 +4,7 @@
 
   @media #{$tablet-widths} {
     background: url('/img/review@1x.jpg') left no-repeat;
-    margin-bottom: 50px;
+    margin-bottom: 82px;
 
     @media #{$retina} {
       background: url('/img/review@2x.jpg') left no-repeat;
@@ -17,7 +17,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -50px;
+      bottom: -90px;
       left: 0;
       right: 0;
       height: 34px;
@@ -35,7 +35,7 @@
   padding-bottom: 50px;
 
   @media #{$tablet-widths} {
-    padding-top: 50px;
+    padding-top: 77px;
   }
   @media #{$desktop-widths} {
     box-sizing: border-box;
@@ -63,7 +63,6 @@
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 30px;
 }
 
 .reviews__description {
@@ -74,6 +73,7 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
+    margin-bottom: 56px;
   }
 }
 
@@ -99,7 +99,7 @@
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 13px;
     width: 175px;
   }
 }
@@ -118,7 +118,7 @@
   @media #{$tablet-widths} {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 80px;
     width: 175px;
   }
 

@@ -1,6 +1,6 @@
 .contacts {
   @include container();
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   padding-top: 20px;
   position: relative;
 
@@ -8,7 +8,7 @@
   flex-direction: column;
 
   @media #{$tablet-widths} {
-    padding-top: 50px;
+    padding-top: 62px;
   }
   @media #{$desktop-widths} {
     margin-bottom: 70px;
@@ -16,6 +16,10 @@
 }
 .contacts__wrapper {
   margin-bottom: 8px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 25px;
+  }
 
   @media #{$desktop-widths} {
     width: 525px;
@@ -32,13 +36,13 @@
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px);
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 44px;
     position: relative;
 
     &::after {
       position: absolute;
-      right: 0;
-      top: -30px;
+      right: 3px;
+      top: -15px;
       content: url("/img/icon-flag.svg");
     }
   }
@@ -57,7 +61,7 @@
   width: 320px;
   height: 457px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   background-color: #f1f1f1;
 
   &::before {
@@ -76,10 +80,11 @@
   @media #{$tablet-widths} {
     width: 768px;
     height: 457px;
+    margin-bottom: 53px;
 
     &::before {
       top: 36%;
-      left: 38%;
+      left: 45%;
     }
 
   }
@@ -94,6 +99,10 @@
 
 .contacts__write-btn {
   align-self: center;
+
+  @media #{$tablet-widths} {
+    width: 230px;
+  }
 
   @media #{$desktop-widths} {
     align-self: flex-start;

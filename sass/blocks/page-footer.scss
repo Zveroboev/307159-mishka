@@ -4,8 +4,10 @@
   background-color: $bg-color;
 
   @media #{$tablet-widths} {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 143px;
+
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -35,6 +37,7 @@
 
   @media #{$tablet-widths} {
     display: block;
+    margin-right: 75px;
 
     &:hover {
 
