@@ -26,7 +26,7 @@
   @media #{$tablet-widths} {
     position: absolute;
     left: 0;
-    top: 20px;
+    top: 18px;
 
     .main-nav__item {
       border: none;
@@ -72,7 +72,7 @@
       border-right: 1px solid #ececec;
 
       &:first-child {
-        width: 85px;
+        width: 80px;
         border-bottom: none;
       }
 
@@ -270,7 +270,7 @@
     @include text-decoration(15px, 24px);
     display: block;
     position: absolute;
-    top: 20px;
+    top: 18px;
     right: 0;
     z-index: 1;
   }

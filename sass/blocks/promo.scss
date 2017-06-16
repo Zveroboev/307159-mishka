@@ -62,7 +62,7 @@
 
   @media #{$tablet-widths} {
     padding: 0 50px;
-    padding-top: 165px;
+    padding-top: 153px;
 
   }
   @media #{$desktop-widths} {
@@ -120,6 +120,20 @@
     }
   }
 
+  @media #{$tablet-widths} {
+
+    &::after {
+      right: 36px;
+      top: 30px;
+    }
+
+    &:hover {
+
+      &::after {
+        top: 25px;
+      }
+    }
+  }
 }
 
 .promo__link-2 {
@@ -154,10 +168,29 @@
       color: rgba(#fff, 0.3);
     }
   }
+
+  @media #{$tablet-widths} {
+
+    &::after {
+      right: 34px;
+      top: 31px;
+    }
+
+    &:hover {
+
+      &::after {
+        top: 26px;
+      }
+    }
+  }
 }
 
 .promo__link-text {
   margin-left: 29px;
   flex-basis: 130px;
   margin-bottom: 5px;
+
+  @media #{$tablet-widths} {
+    margin-left: 35px;
+  }
 }
