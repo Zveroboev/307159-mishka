@@ -1,5 +1,4 @@
 .adress-table {
-  margin-bottom: 50px;
 
   tbody {
     @media #{$tablet-widths} {
@@ -27,6 +26,7 @@
   @include text-decoration(15px, 30px);
   min-width: 70px;
   vertical-align: top;
+  padding-bottom: 27px;
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
@@ -35,6 +35,7 @@
 
 .adress-table__table-data-inner {
   border-bottom: 1px solid $green-color;
+  padding-bottom: 4px;
 
   &:hover {
     color: $green-color;

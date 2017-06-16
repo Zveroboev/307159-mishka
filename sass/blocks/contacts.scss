@@ -1,7 +1,7 @@
 .contacts {
   @include container();
-  margin-bottom: 50px;
-  padding-top: 50px;
+  margin-bottom: 40px;
+  padding-top: 20px;
   position: relative;
 
   display: flex;
@@ -15,6 +15,7 @@
   }
 }
 .contacts__wrapper {
+  margin-bottom: 8px;
 
   @media #{$desktop-widths} {
     width: 525px;
@@ -26,6 +27,7 @@
 .contacts__title {
   @include text-decoration(18px, 30px);
   font-weight: bold;
+  margin-bottom: 23px;
 
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px);
@@ -55,14 +57,15 @@
   width: 320px;
   height: 457px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-color: #f1f1f1;
 
   &::before {
     position: absolute;
     content: url("/img/icon-map-pin.svg");
-    top: 37%;
-    left: 40%;
+    top: 36%;
+    left: 38%;
+    z-index: 1;
   }
 
   img {
@@ -76,7 +79,7 @@
 
     &::before {
       top: 36%;
-      left: 45%;
+      left: 38%;
     }
 
   }

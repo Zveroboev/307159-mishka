@@ -54,6 +54,7 @@
 }
 
 .reviews__title {
+  margin-bottom: 24px;
 
   @media #{$tablet-widths} {
     margin-bottom: 50px;
@@ -69,7 +70,7 @@
   @include text-decoration(15px, 30px);
   color: $gray-color;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
@@ -91,7 +92,7 @@
 .reviews__pagination {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 
   display: flex;
 
