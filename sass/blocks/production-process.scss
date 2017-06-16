@@ -1,6 +1,6 @@
 .production-process {
   @include container();
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 
   @media #{$desktop-widths} {
     margin-bottom: 100px;
@@ -28,37 +28,43 @@
 }
 
 .production-process__title {
-  padding-left: 90px;
+  @include text-decoration(17px, 23px);
+  padding-left: 89px;
   position: relative;
+  top: 11px;
+  margin-bottom: 36px;
 
   &::before {
     content: url("/img/icon-video.svg");
     position: absolute;
-    left: 35px;
-    top: -6px;
+    left: 33px;
+    top: 6px;
   }
 
   @media #{$tablet-widths} {
     @include text-decoration(20px, 24px);
-    padding-left: 110px;
+    padding-left: 106px;
     padding-right: 20px;
+    margin: 0;
+    margin-bottom: 42px;
 
     order: 1;
 
     &::before {
       left: 40px;
+      top: -5px;
     }
   }
   @media #{$desktop-widths} {
     width: 350px;
     box-sizing: border-box;
-    margin-top: 100px;
-    padding-left: 40px;
+    margin-top: 84px;
+    padding-left: 69px;
     padding-right: 75px;
 
     &::before {
-      left: 40px;
-      top: -60px;
+      left: 71px;
+      top: -54px;
     }
   }
 }
@@ -68,6 +74,7 @@
   height: 150px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 15px;
 
   display: flex;
 
@@ -75,7 +82,7 @@
     width: 668px;
     height: 455px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 
     order: 0;
   }
@@ -116,19 +123,24 @@
 .production-process__discr {
   @include text-decoration(13px, 24px);
   color: $gray-color;
-  padding-left: 10px;
-  padding-right: 65px;
+  padding-left: 32px;
+  padding-right: 42px;
+  margin-bottom: 25px;
 
   @media #{$tablet-widths} {
     @include text-decoration(15px, 30px);
+    margin: 0;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 36px;
+
 
     order: 1;
   }
   @media #{$desktop-widths} {
     width: 350px;
     box-sizing: border-box;
+    padding-left: 69px;
 
     flex-grow: 1;
   }
@@ -136,7 +148,7 @@
 
 .production-process__order {
   align-self: center;
-  width: 230px;
+  width: 190px;
   margin-bottom: 30px;
 
   @media #{$tablet-widths} {
@@ -145,9 +157,9 @@
     order: 1;
   }
   @media #{$desktop-widths} {
-    width: 235px;
-    margin-bottom: 60px;
-    margin-left: 40px;
+    width: 230px;
+    margin-left: 71px;
+    margin-bottom: 61px;
 
     align-self: flex-start;
   }

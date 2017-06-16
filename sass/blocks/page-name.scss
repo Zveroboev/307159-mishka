@@ -1,18 +1,36 @@
 .page-name {
   background-color: $bg-color;
   min-width: 320px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  position: relative;
 
   @media #{$tablet-widths} {
-    margin-bottom: 80px;
+    margin-bottom: 63px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 0;
+      height: 34px;
+      background: url(/img/bg-zigzag-fill.svg) repeat-x center;
+    }
   }
 
   @media #{$desktop-widths} {
-    margin-bottom: 130px;
-  }
+    margin-bottom: 133px;
 
-  .page-name__wrapper {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    &::after {
+      bottom: -23px;
+    }
+  }
+}
+
+.page-name__wrapper {
+  padding: 70px 0;
+
+  @media #{$tablet-widths} {
+    padding:96px 0;
   }
 }

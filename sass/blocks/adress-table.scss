@@ -36,6 +36,7 @@
 .adress-table__table-data-inner {
   border-bottom: 1px solid $green-color;
   padding-bottom: 4px;
+  cursor: pointer;
 
   &:hover {
     color: $green-color;
