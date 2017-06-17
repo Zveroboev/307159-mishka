@@ -5,6 +5,10 @@
   @media #{$tablet-widths} {
     padding-left: 167px;
   }
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
 }
 
 .form-phone__number-wrapper {
@@ -48,6 +52,10 @@
   @media #{$tablet-widths} {
     top: 10px;
     right: 26px;
+  }
+  @media #{$desktop-widths} {
+    top: 9px;
+    right: 183px;
   }
 }
 

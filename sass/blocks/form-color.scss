@@ -49,6 +49,9 @@
       left: 18px;
     }
   }
+  @media #{$desktop-widths} {
+    margin-right: 12px;
+  }
 }
 
 .form-color__label:nth-child(2n) {

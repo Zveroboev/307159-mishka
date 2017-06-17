@@ -23,6 +23,7 @@
 
   @media #{$desktop-widths} {
     order: 1;
+    margin-right: 174px;
   }
 }
 
@@ -33,5 +34,8 @@
 
   @media #{$tablet-widths} {
     width: 230px;
+  }
+  @media #{$desktop-widths} {
+    margin-left: 175px;
   }
 }

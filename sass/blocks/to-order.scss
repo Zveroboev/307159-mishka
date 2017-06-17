@@ -21,6 +21,7 @@
   @media #{$desktop-widths} {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -32,12 +33,19 @@
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
   }
+  @media #{$desktop-widths} {
+    padding-left: 174px;
+    padding-right: 160px;
+  }
 }
 
 .to-order__form-type {
 
   @media #{$tablet-widths} {
     margin-bottom: 23px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 22px;
   }
 }
 
@@ -49,6 +57,9 @@
     padding-bottom: 25px;
     background-color: $bg-color;
     margin-bottom: 54px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 53px;
   }
 }
 
@@ -78,6 +89,9 @@
     padding-bottom: 21px;
     margin-bottom: 51px;
   }
+  @media #{$desktop-widths} {
+    margin-bottom: 52px;
+  }
 }
 
 .to-order__form-add {
@@ -85,6 +99,9 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 53px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 49px;
   }
 }
 
@@ -108,6 +125,5 @@
   @media #{$desktop-widths} {
     width: 1050px;
     margin: 0 auto;
-    margin-bottom: 50px;
   }
 }

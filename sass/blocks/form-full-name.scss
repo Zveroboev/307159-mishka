@@ -8,6 +8,10 @@
     align-items: baseline;
     padding-left: 167px;
   }
+  @media #{$desktop-widths} {
+    padding-left: 176px;
+    padding-right: 175px;
+  }
 }
 
 .form-full-name__legend {
@@ -34,6 +38,9 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
+  }
+  @media #{$desktop-widths} {
+    flex-basis: 75%;
   }
 }
 

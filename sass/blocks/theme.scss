@@ -180,7 +180,7 @@
 
   @media #{$desktop-widths} {
     width: 1050px;
-    padding-left: 200px;
+    padding-left: 158px;
     margin: 0 auto;
   }
 }
@@ -197,8 +197,12 @@
 
   @media #{$tablet-widths} {
     position: absolute;
-    left: 1px;
-    top: 16px;
+    left: 0;
+    top: 15px;
+  }
+  @media #{$desktop-widths} {
+    left: 65px;
+    top: 15px;
   }
 }
 
