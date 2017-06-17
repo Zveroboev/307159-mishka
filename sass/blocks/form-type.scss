@@ -24,7 +24,6 @@
     top: 4px;
   }
 
-
   @media #{$tablet-widths} {
     padding-left: 97px;
     margin-bottom: 45px;
@@ -56,12 +55,7 @@
   display: none;
 }
 
-.form-type__inner:checked {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  position: relative;
-  outline: none;
+.form-type__inner:checked  + .form-type__label {
 
   &::after {
     content: "";

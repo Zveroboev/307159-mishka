@@ -79,11 +79,7 @@
   display: none;
 }
 
-.form-color__inner:checked {
-  display: block;
-  width: 0;
-  height: 0;
-  outline: none;
+.form-color__inner:checked + .form-color__label {
 
   &::after {
     content: url("/img/icon-tick-small.svg");
