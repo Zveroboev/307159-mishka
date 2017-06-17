@@ -1,6 +1,10 @@
 .to-order {
   min-width: 320px;
   margin-bottom: 25px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 50px;
+  }
 }
 
 .to-order__wrapper {
@@ -11,6 +15,7 @@
   @media #{$tablet-widths} {
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
 
   @media #{$desktop-widths} {
@@ -29,14 +34,21 @@
   }
 }
 
+.to-order__form-type {
+
+  @media #{$tablet-widths} {
+    margin-bottom: 23px;
+  }
+}
+
 .to-order__form-color {
   margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     background-color: $bg-color;
-    margin-bottom: 65px;
+    margin-bottom: 54px;
   }
 }
 
@@ -44,7 +56,7 @@
   margin-bottom: 9px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
   }
 }
 
@@ -53,8 +65,8 @@
 
   @media #{$tablet-widths} {
     background-color: $bg-color;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 52px;
+    margin-bottom: 0;
   }
 }
 
@@ -63,7 +75,8 @@
 
   @media #{$tablet-widths} {
     background-color: $bg-color;
-    padding-bottom: 45px;
+    padding-bottom: 21px;
+    margin-bottom: 51px;
   }
 }
 
@@ -71,7 +84,7 @@
   margin-bottom: 16px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -86,7 +99,6 @@
   @media #{$tablet-widths} {
     width: 668px;
     margin: 0 auto;
-    margin-bottom: 50px;
 
     flex-direction: row;
     justify-content: space-between;

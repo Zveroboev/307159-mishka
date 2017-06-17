@@ -197,7 +197,8 @@
 
   @media #{$tablet-widths} {
     position: absolute;
-    left: 0;
+    left: 1px;
+    top: 16px;
   }
 }
 
@@ -207,6 +208,10 @@
   padding-top: 10px;
   padding-bottom: 15px;
   margin-bottom: 23px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 28px;
+  }
 }
 
 .theme__input:hover {

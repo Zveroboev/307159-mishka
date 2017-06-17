@@ -38,7 +38,23 @@
   }
 
   @media #{$tablet-widths} {
-    width: 255px;
+    width: 250px;
+    margin-bottom: 33px;
+    padding-left: 97px;
+    padding-top: 15px;
+
+    &::before {
+      width: 49px;
+      height: 49px;
+      left: 18px;
+    }
+  }
+}
+
+.form-color__label:nth-child(2n) {
+
+  @media #{$tablet-widths-only} {
+    margin-right: 12px;
   }
 }
 
@@ -71,5 +87,15 @@
     position: absolute;
     left: 8px;
     top: 6px;
+  }
+
+  @media #{$tablet-widths} {
+
+    &::after {
+      content: url("/img/icon-tick.svg");
+      position: absolute;
+      left: 28px;
+      top: 15px;
+    }
   }
 }

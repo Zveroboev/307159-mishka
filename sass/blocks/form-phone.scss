@@ -1,6 +1,10 @@
 .form-phone {
   display: flex;
   flex-direction: column;
+
+  @media #{$tablet-widths} {
+    padding-left: 167px;
+  }
 }
 
 .form-phone__number-wrapper {
@@ -28,7 +32,9 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
+    font-weight: normal;
     background-color: $bg-color;
+    padding-left: 17px;
   }
 }
 
@@ -40,7 +46,8 @@
   z-index: 1;
 
   @media #{$tablet-widths} {
-    top: 5px;
+    top: 10px;
+    right: 26px;
   }
 }
 

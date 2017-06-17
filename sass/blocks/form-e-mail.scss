@@ -1,6 +1,10 @@
 .form-e-mail {
   display: flex;
   flex-direction: column;
+
+  @media #{$tablet-widths} {
+    padding-left: 167px;
+  }
 }
 
 .form-e-mail__legend {
@@ -27,6 +31,7 @@
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
     background-color: $bg-color;
+    padding-left: 17px;
   }
 }
 
@@ -38,7 +43,8 @@
   z-index: 1;
 
   @media #{$tablet-widths} {
-    top: 5px;
+    top: 7px;
+    right: 22px;
   }
 }
 

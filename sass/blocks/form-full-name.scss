@@ -6,6 +6,7 @@
   @media #{$tablet-widths} {
     flex-direction: row;
     align-items: baseline;
+    padding-left: 167px;
   }
 }
 
@@ -20,7 +21,8 @@
   cursor: pointer;
 
   @media #{$tablet-widths} {
-    flex-basis: 130px;
+    flex-basis: 120px;
+    margin-right: 6px;
   }
 }
 
@@ -39,9 +41,10 @@
     border-bottom: 2px solid $green-color;
 }
 
-.form-full-name::placeholder {
+.form-full-name__input::placeholder {
 
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
+    padding-left: 16px;
   }
 }

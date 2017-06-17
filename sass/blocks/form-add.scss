@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  @media #{$tablet-widths} {
+    padding-left: 167px;
+  }
+
   @media #{$desktop-widths} {
     padding-right: 200px;
   }
