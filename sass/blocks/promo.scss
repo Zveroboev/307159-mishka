@@ -123,6 +123,7 @@
   }
 
   @media #{$tablet-widths} {
+    @include animation(fadeInLeft)
 
     &::after {
       right: 36px;
@@ -172,6 +173,7 @@
   }
 
   @media #{$tablet-widths} {
+    @include animation(fadeInRight)
 
     &::after {
       right: 34px;

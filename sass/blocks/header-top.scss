@@ -33,6 +33,8 @@
   }
   @media #{$desktop-widths} {
     flex-basis: auto;
+
+
   }
 }
 
@@ -63,6 +65,10 @@
   @media #{$desktop-widths} {
     width: 149px;
     height: 72px;
+    z-index: 1;
+
+    @include animation(bounceInDown);
+    animation-delay: 0.5s;
   }
 }
 

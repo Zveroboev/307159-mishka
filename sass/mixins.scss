@@ -41,3 +41,9 @@
     margin: 0 50px;
   }
 }
+
+@mixin animation($animation-name) {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: $animation-name;
+}
