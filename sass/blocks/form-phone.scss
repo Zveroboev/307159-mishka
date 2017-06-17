@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.form-phone__legend {
+  margin-bottom: 12px;
+}
+
 .form-phone__number {
   outline: none;
   color: $gray-color;
@@ -30,8 +34,8 @@
 
 .form-phone__svg {
   position: absolute;
-  right: 5px;
-  top: 50px;
+  right: 7px;
+  top: 33px;
   opacity: 0.3;
   z-index: 1;
 

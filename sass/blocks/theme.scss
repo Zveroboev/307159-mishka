@@ -169,7 +169,6 @@
 .theme__form {
   position: relative;
   margin: 0 30px;
-  margin-bottom: 30px;
   min-width: 260px;
   box-sizing: border-box;
 
@@ -184,6 +183,10 @@
     padding-left: 200px;
     margin: 0 auto;
   }
+}
+
+.theme__form-wrapper {
+  margin-bottom: 34px;
 }
 
 .theme__form-title {
@@ -202,8 +205,8 @@
   border: none;
   border-bottom: 2px solid $black-color;
   padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 23px;
 }
 
 .theme__input:hover {

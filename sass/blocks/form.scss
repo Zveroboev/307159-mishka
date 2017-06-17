@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+.form__legend {
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 .form__note {
   @include text-decoration(14px, 16px);

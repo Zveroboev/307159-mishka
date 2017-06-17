@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.form-e-mail__legend {
+  margin-bottom: 14px;
+}
+
 .form-e-mail__adress-wrapper {
   display: flex;
 }
@@ -29,7 +33,7 @@
 .form-e-mail__svg {
   position: absolute;
   right: 5px;
-  top: 50px;
+  top: 34px;
   opacity: 0.3;
   z-index: 1;
 

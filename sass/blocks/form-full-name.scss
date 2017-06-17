@@ -9,9 +9,14 @@
   }
 }
 
+.form-full-name__legend {
+  margin-bottom: 30px;
+}
+
 .form-full-name__label {
   @include form-elements-style;
   margin-right: 10px;
+  margin-bottom: 6px;
   cursor: pointer;
 
   @media #{$tablet-widths} {

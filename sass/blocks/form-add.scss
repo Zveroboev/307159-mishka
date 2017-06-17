@@ -7,6 +7,10 @@
   }
 }
 
+.form-add__legend {
+  margin-bottom: 24px;
+}
+
 .form-add__to-order {
   @include text-decoration(17px, 18px);
   border: 2px solid $black-color;

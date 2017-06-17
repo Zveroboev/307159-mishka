@@ -1,10 +1,12 @@
 .to-order {
   min-width: 320px;
+  margin-bottom: 25px;
 }
 
 .to-order__wrapper {
   min-width: 260px;
   margin: 0 30px;
+  margin-bottom: 25px;
 
   @media #{$tablet-widths} {
     width: 668px;
@@ -20,7 +22,7 @@
 .to-order__descr {
   @include text-decoration(13px, 24px);
   color: $gray-color;
-  margin-bottom: 30px;
+  margin: 0;
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
@@ -28,6 +30,7 @@
 }
 
 .to-order__form-color {
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     padding-top: 50px;
@@ -38,6 +41,7 @@
 }
 
 .to-order__form-full-name {
+  margin-bottom: 9px;
 
   @media #{$tablet-widths} {
     margin-bottom: 65px;
@@ -45,6 +49,7 @@
 }
 
 .to-order__form-phone {
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     background-color: $bg-color;
@@ -54,21 +59,16 @@
 }
 
 .to-order__form-email {
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
+    background-color: $bg-color;
     padding-bottom: 45px;
   }
 }
 
-.to-order__form-email {
-  margin-bottom: 50px;
-
-  @media #{$tablet-widths} {
-    background-color: $bg-color;
-  }
-}
-
 .to-order__form-add {
+  margin-bottom: 16px;
 
   @media #{$tablet-widths} {
     margin-bottom: 50px;
