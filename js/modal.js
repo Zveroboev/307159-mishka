@@ -13,10 +13,9 @@ if (location.pathname === '/catalog.html'){
 } else if (location.pathname === '/index.html') {
   var openModalButton = document.getElementById('openModal');
 
-  openModalButton.setAttribute('href', '#');
   openModalButton.removeAttribute('target');
 
-  openModalButton.addEventListener('click', openModal);
+  openModalButton.addEventListener('click', openModal, false);
 }
 
 function openModal() {

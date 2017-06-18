@@ -61,6 +61,9 @@
   @media #{$tablet-widths} {
     width: 113px;
     height: 46px;
+
+    @include animation(bounceInLeft);
+    animation-delay: 0.5s;
   }
   @media #{$desktop-widths} {
     width: 149px;

@@ -251,14 +251,14 @@
   @media #{$tablet-widths} {
     @include text-decoration(15px, 24px);
     flex-grow: 0;
+
+    @include animation(zoomIn);
+    animation-duration: 0.5s;
   }
 
   @media #{$desktop-widths} {
     @include text-decoration(17px, 24px);
     flex-grow: 0;
-
-    @include animation(zoomIn);
-    animation-duration: 0.5s;
   }
 }
 

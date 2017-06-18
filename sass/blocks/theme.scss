@@ -96,11 +96,22 @@
 
   @media #{$tablet-widths} {
     @include text-decoration(43px, 50px)
+    //opacity: 0;
   }
   @media #{$desktop-widths} {
     @include text-decoration(53px, 57px);
   }
 }
+
+.theme__section-title--animation {
+
+  @media #{$tablet-widths} {
+    //opacity: 1;
+    @include animation(pulse);
+    animation-duration: 1.7s;
+  }
+}
+
 
 .theme__about-description {
   margin: 0;
@@ -140,7 +151,19 @@
     @include text-decoration(20px, 22px);
     padding-right: 40px;
     margin-bottom: 62px;
+
+    opacity: 0;
   }
+}
+
+.theme__about-item--animation-left {
+  opacity: 1;
+  @include animation(fadeInLeft);
+}
+
+.theme__about-item--animation-right {
+  opacity: 1;
+  @include animation(fadeInRight);
 }
 
 .theme__reviews-pagination {
