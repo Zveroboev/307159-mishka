@@ -3,12 +3,18 @@ var modalWindow = document.getElementById('modal');
 
 closeModalButton.addEventListener('click', closeModal);
 modalWindow.addEventListener('click', closeModal);
-
+console.log(location.pathname);
 
 if (location.pathname === '/catalog.html'){
 
+  var modalLinks = document.getElementsByClassName('catalog-item__price');
+
+  for (var i = 0; i < modalLinks.length; i++) {
+    modalLinks[i].addEventListener('click', openModal);
+  }
 
 } else if (location.pathname === '/index.html') {
+
   var openModalButton = document.getElementById('openModal');
 
   openModalButton.setAttribute('href', '#');
