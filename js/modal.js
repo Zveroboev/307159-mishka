@@ -27,6 +27,10 @@ function openModal() {
 
 function closeModal() {
   var modalWindow = document.getElementById('modal');
+  var modalWrapper = document.querySelector('.modal__wrapper');
 
-  modalWindow.classList.add('modal--closed');
+  modalWrapper.classList.add('modal__wrapper--animation-closed');
+  setTimeout( function() {modalWrapper.classList.remove('modal__wrapper--animation-closed') }, 500 );
+
+  setTimeout( function() { modalWindow.classList.add('modal--closed') }, 500 );
 }

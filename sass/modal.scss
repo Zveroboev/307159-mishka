@@ -41,6 +41,15 @@
     height: 340px;
     border: 1px solid #c7c7c7;
     flex-basis: auto;
+
+    @include animation(fadeInUpBig);
+  }
+}
+
+.modal__wrapper--animation-closed {
+
+  @media #{$tablet-widths} {
+    @include animation(fadeOutDownBig);
   }
 }
 
