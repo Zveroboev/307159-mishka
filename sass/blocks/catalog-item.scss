@@ -74,6 +74,8 @@
 
 .catalog-item__name {
   @include text-decoration(17px, 24px);
+  text-decoration: none;
+  color: $black-color;
   font-weight: bold;
   display: block;
   margin-bottom: 4px;
