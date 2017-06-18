@@ -6,14 +6,6 @@
     background: url('/img/review@1x.jpg') left no-repeat;
     margin-bottom: 82px;
 
-    @media #{$retina} {
-      background: url('/img/review@2x.jpg') left no-repeat;
-      background-size: 350px;
-    }
-  }
-
-  @media #{$tablet-widths-only} {
-
     &::after {
       content: "";
       position: absolute;
@@ -22,6 +14,11 @@
       right: 0;
       height: 34px;
       background: url(/img/bg-zigzag-line.svg) repeat-x center;
+    }
+
+    @media #{$retina} {
+      background: url('/img/review@2x.jpg') left no-repeat;
+      background-size: 350px;
     }
   }
 
@@ -43,16 +40,6 @@
     padding-bottom: 100px;
     box-sizing: border-box;
     padding-left: 170px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -90px;
-      left: 0;
-      right: 0;
-      height: 34px;
-      background: url(/img/bg-zigzag-line.svg) repeat-x center;
-    }
   }
 }
 

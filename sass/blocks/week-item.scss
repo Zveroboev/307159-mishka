@@ -6,9 +6,6 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 50px;
-  }
-
-  @media #{$tablet-widths-only} {
 
     &::after {
       content: "";
@@ -40,17 +37,6 @@
     padding-left: 172px;
     box-sizing: border-box;
     padding-top: 54px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      bottom: -100px;
-      left: 0;
-      right: 0;
-      height: 34px;
-      background: url(/img/bg-zigzag-line.svg) repeat-x center;
-    }
   }
 }
 
