@@ -195,6 +195,18 @@
   font-weight: bold;
   color: $green-color;
   text-transform: uppercase;
+  position: relative;
+
+  @media #{$mobile-widths-only} {
+    &::after {
+      content: "";
+      width: 75%;
+      border-bottom: 1px solid $green-color;
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+    }
+  }
 
   @media #{$tablet-widths} {
     position: absolute;
