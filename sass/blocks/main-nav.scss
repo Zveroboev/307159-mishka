@@ -257,8 +257,8 @@
     @include text-decoration(17px, 24px);
     flex-grow: 0;
 
-    @include animation(bounceIn);
-    animation-duration: 0.75s;
+    @include animation(zoomIn);
+    animation-duration: 0.5s;
   }
 }
 
