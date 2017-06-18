@@ -1,12 +1,15 @@
 /**
  * Created by Sergey on 18.06.2017.
  */
-console.log( document.getElementsByClassName('about-us__item1')[0] );
-
+//Добавляю прозрачность всем элементам списка секции О нас
+for (var i = 1; i <= 6; i++) {
+  var className = 'about-us__item' + i;
+  document.getElementsByClassName(className)[0].classList.add('theme__about-item--opacity');
+}
+//
 window.onscroll = function () {
   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(scrolled);
-
+  //console.log(scrolled);
 
   // Заголовок секции Товар недели
   if (scrolled >= 400) {
@@ -18,7 +21,7 @@ window.onscroll = function () {
     document.querySelector('.about-us__title').classList.add('theme__section-title--animation');
   }
   //Левые элементы li в секции О нас
-  if (scrolled >= 1300) {
+  if (scrolled >= 1250) {
     document.getElementsByClassName('about-us__item1')[0].classList.add('theme__about-item--animation-left');
     document.getElementsByClassName('about-us__item4')[0].classList.add('theme__about-item--animation-right');
   }
@@ -38,4 +41,3 @@ window.onscroll = function () {
     document.querySelector('.reviews__title').classList.add('theme__section-title--animation');
   }
 };
-
