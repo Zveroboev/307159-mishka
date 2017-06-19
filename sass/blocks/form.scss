@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 }
+.form__legend {
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 .form__note {
   @include text-decoration(14px, 16px);
@@ -19,6 +23,7 @@
 
   @media #{$desktop-widths} {
     order: 1;
+    margin-right: 174px;
   }
 }
 
@@ -26,4 +31,11 @@
   align-self: center;
   background-color: #fff;
   padding: 0;
+
+  @media #{$tablet-widths} {
+    width: 230px;
+  }
+  @media #{$desktop-widths} {
+    margin-left: 175px;
+  }
 }

@@ -1,77 +1,107 @@
 .to-order {
   min-width: 320px;
+  margin-bottom: 25px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 50px;
+  }
 }
 
 .to-order__wrapper {
   min-width: 260px;
   margin: 0 30px;
+  margin-bottom: 25px;
 
   @media #{$tablet-widths} {
     width: 668px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
 
   @media #{$desktop-widths} {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 60px;
   }
 }
 
 .to-order__descr {
   @include text-decoration(13px, 24px);
   color: $gray-color;
-  margin-bottom: 30px;
+  margin: 0;
 
   @media #{$tablet-widths} {
     @include text-decoration(17px, 30px);
   }
+  @media #{$desktop-widths} {
+    padding-left: 174px;
+    padding-right: 160px;
+  }
+}
+
+.to-order__form-type {
+
+  @media #{$tablet-widths} {
+    margin-bottom: 23px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 22px;
+  }
 }
 
 .to-order__form-color {
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     background-color: $bg-color;
-    margin-bottom: 65px;
+    margin-bottom: 54px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 53px;
   }
 }
 
 .to-order__form-full-name {
+  margin-bottom: 9px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 65px;
+    margin-bottom: 20px;
   }
 }
 
 .to-order__form-phone {
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     background-color: $bg-color;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 52px;
+    margin-bottom: 0;
   }
 }
 
 .to-order__form-email {
-
-  @media #{$tablet-widths} {
-    padding-bottom: 45px;
-  }
-}
-
-.to-order__form-email {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 
   @media #{$tablet-widths} {
     background-color: $bg-color;
+    padding-bottom: 21px;
+    margin-bottom: 51px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 52px;
   }
 }
 
 .to-order__form-add {
+  margin-bottom: 16px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+  }
+  @media #{$desktop-widths} {
+    margin-bottom: 49px;
   }
 }
 
@@ -86,7 +116,6 @@
   @media #{$tablet-widths} {
     width: 668px;
     margin: 0 auto;
-    margin-bottom: 50px;
 
     flex-direction: row;
     justify-content: space-between;
@@ -96,6 +125,5 @@
   @media #{$desktop-widths} {
     width: 1050px;
     margin: 0 auto;
-    margin-bottom: 50px;
   }
 }

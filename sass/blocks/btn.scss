@@ -4,11 +4,20 @@
   box-sizing: border-box;
   display: block;
   width: 260px;
-  height: 50px;
+  height: 52px;
   border: 2px solid $gray-color;
   text-decoration: none;
   color: $gray-color;
-  padding-top: 13px;
+  padding-top: 14px;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #444444;
+    color: #fff;
+  }
+  &:active {
+    color: rgba(#fff, 0.3);
+  }
 }

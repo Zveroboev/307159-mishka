@@ -1,8 +1,35 @@
 .catalog {
   @include container();
 
+  @media #{$tablet-widths} {
+    margin-bottom: 49px;
+
+  }
   @media #{$desktop-widths} {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+  }
+}
+
+.catalog__item {
+  transition: 0.3s;
+}
+
+.catalog__item-link {
+  background-color: #e4e4e4;
+  height: 195px;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media #{$tablet-widths} {
+    width: 334px;
+    height: 334px;
+    margin-bottom: 0;
+  }
+
+  @media #{$desktop-widths} {
+    width: 315px;
+    height: 462px;
   }
 }
 
@@ -39,5 +66,9 @@
 
   @media #{$desktop-widths} {
     width: 315px;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba(#c6c6c6, 0.9);
   }
 }

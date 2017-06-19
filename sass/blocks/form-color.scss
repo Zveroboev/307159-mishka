@@ -10,11 +10,15 @@
   }
 }
 
+.form-color__legend {
+  margin-bottom: 24px;
+}
+
 .form-color__label {
   @include form-elements-style;
   box-sizing: border-box;
-  margin-bottom: 30px;
-  padding-left: 80px;
+  margin-bottom: 23px;
+  padding-left: 62px;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -26,15 +30,48 @@
   &::before {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border: 2px solid #454545;
     left: 0;
     top: 0;
   }
 
   @media #{$tablet-widths} {
-    width: 255px;
+    width: 250px;
+    margin-bottom: 33px;
+    padding-left: 97px;
+    padding-top: 15px;
+
+    &::before {
+      width: 49px;
+      height: 49px;
+      left: 18px;
+    }
+  }
+  @media #{$desktop-widths} {
+    margin-right: 12px;
+  }
+}
+
+.form-color__label:nth-child(2n) {
+
+  @media #{$tablet-widths-only} {
+    margin-right: 12px;
+  }
+}
+
+.form-color__label:hover {
+
+  &:before {
+    border: 2px solid $green-color;
+  }
+}
+
+.form-color__label:active {
+
+  &:before {
+    border: 2px solid rgba($black-color, 0.3);
   }
 }
 
@@ -42,16 +79,22 @@
   display: none;
 }
 
-.form-color__inner:checked {
-  display: block;
-  width: 0;
-  height: 0;
-  outline: none;
+.form-color__inner:checked + .form-color__label {
 
   &::after {
-    content: url("/img/icon-tick.svg");
+    content: url("/img/icon-tick-small.svg");
     position: absolute;
-    left: 6px;
-    top: 12px;
+    left: 8px;
+    top: 6px;
+  }
+
+  @media #{$tablet-widths} {
+
+    &::after {
+      content: url("/img/icon-tick.svg");
+      position: absolute;
+      left: 28px;
+      top: 15px;
+    }
   }
 }
