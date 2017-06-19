@@ -204,11 +204,13 @@
       </tr>
     </table>
   </div>
-  <picture class="contacts__map">
-    <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-    <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-    <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Map">
-  </picture>
+  <div class="contacts__map">
+    <picture class="contacts__map-wrapper">
+      <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+      <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+      <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Map">
+    </picture>
+  </div>
   <a class="contacts__write-btn btn" href="#">Напишите нам</a>
 </section>
 <footer class="page-footer">
