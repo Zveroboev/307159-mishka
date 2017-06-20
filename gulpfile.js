@@ -11,7 +11,9 @@ var gulp         = require("gulp"),
     rename       = require("gulp-rename"),
     imagemin     = require("gulp-imagemin"),
     svgmin       = require("gulp-svgmin"),
-    svgstore     = require("gulp-svgstore");
+    svgstore     = require("gulp-svgstore"),
+    run          = require("run-sequence"),
+    del          = require("del");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -23,16 +25,16 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -40,35 +42,65 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html:update"]);
+});
+
+gulp.task("html:copy", function() {
+  return gulp.src("*.html")
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("html:update", ["html:copy"], function(done) {
+  server.reload();
+  done();
 });
 
 gulp.task("images", function() {
-  return gulp.src("img/**/*.{png,jpg,gif}")
+  return gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
     ]))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function() {
-  var cart = gulp.src("img/icon-cart.svg")
+  var cart = gulp.src("build/img/icon-cart.svg")
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite-cart.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 
   var social = gulp.src([
-    "img/icon-fb.svg",
-    "img/icon-twitter.svg",
-    "img/icon-insta.svg",
+    "build/img/icon-fb.svg",
+    "build/img/icon-twitter.svg",
+    "build/img/icon-insta.svg"
     ])
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite-social.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("build", function(fn) {
+  run("clean", "copy", "style", "images", "sprite", fn);
+});
+
+gulp.task("copy", function() {
+ return gulp.src([
+ "fonts/**/*.{woff,woff2}",
+ "img/**",
+ "js/**",
+ "*.html"
+ ], {
+ base: "."
+ })
+ .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function() {
+  return del("build");
 });

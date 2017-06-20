@@ -20,6 +20,7 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 28px;
+  display: block;
 
   @media #{$tablet-widths} {
     width: 334px;
