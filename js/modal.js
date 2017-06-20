@@ -1,15 +1,13 @@
 var closeModalButton = document.querySelector('.modal__form-send');
 var modalWindow = document.getElementById('modal');
 
-console.log(closeModalButton);
-console.log(modalWindow);
-
 closeModalButton.addEventListener('click', closeModal);
 modalWindow.addEventListener('click', closeModal);
 
+console.log(location);
 console.log(location.pathname);
 
-if (location.pathname === '/index.html') {
+if (location.pathname === '/index.html' || location.pathname === '/') {
   var openModalButton = document.getElementById('openModal');
   console.log(openModalButton);
 
