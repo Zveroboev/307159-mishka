@@ -1,21 +1,28 @@
 var closeModalButton = document.querySelector('.modal__form-send');
 var modalWindow = document.getElementById('modal');
 
+console.log(closeModalButton);
+console.log(modalWindow);
+
 closeModalButton.addEventListener('click', closeModal);
 modalWindow.addEventListener('click', closeModal);
 
-if (location.pathname === '/catalog.html'){
+console.log(location.pathname);
+
+if (location.pathname === '/index.html') {
+  var openModalButton = document.getElementById('openModal');
+  console.log(openModalButton);
+
+  openModalButton.removeAttribute('target');
+
+  openModalButton.addEventListener('click', openModal, false);
+} else if (location.pathname === '/catalog.html') {
+
   var modalLinks = document.getElementsByClassName('catalog-item__price');
 
   for (var i = 0; i < modalLinks.length; i++) {
     modalLinks[i].addEventListener('click', openModal);
   }
-} else if (location.pathname === '/index.html') {
-  var openModalButton = document.getElementById('openModal');
-
-  openModalButton.removeAttribute('target');
-
-  openModalButton.addEventListener('click', openModal, false);
 }
 
 function openModal() {
@@ -29,7 +36,11 @@ function closeModal() {
   var modalWrapper = document.querySelector('.modal__wrapper');
 
   modalWrapper.classList.add('modal__wrapper--animation-closed');
-  setTimeout( function() {modalWrapper.classList.remove('modal__wrapper--animation-closed') }, 500 );
+  setTimeout(function () {
+    modalWrapper.classList.remove('modal__wrapper--animation-closed')
+  }, 500);
 
-  setTimeout( function() { modalWindow.classList.add('modal--closed') }, 500 );
+  setTimeout(function () {
+    modalWindow.classList.add('modal--closed')
+  }, 500);
 }

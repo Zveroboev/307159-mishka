@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "gulp style",
+    "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
   "editorconfig-cli": [
@@ -37,7 +37,5 @@
   "engines": {
     "node": "6.10"
   },
-  "dependencies": {
-    "svgxuse": "^1.2.4"
-  }
+  "dependencies": {}
 }

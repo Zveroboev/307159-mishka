@@ -9,8 +9,8 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="./js/picturefill.js" async></script>
-  <script defer src="node_modules/svgxuse/svgxuse.js"></script>
+  <script src="./js/polyfill/picturefill.js" async></script>
+  <script defer src="./js/polyfill/svgxuse.js"></script>
 </head>
 <body class="theme">
 <svg style="display:none" class="theme__sprite-social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -233,8 +233,8 @@
       </tr>
     </table>
   </div>
-  <div class="contacts__map">
-    <picture class="contacts__map-wrapper">
+  <div class="contacts__map" id="map">
+    <picture class="contacts__map-wrapper contacts__map-wrapper--hidden">
       <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
       <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
       <img src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="Map">
@@ -287,9 +287,10 @@
     </div>
   </div>
 </footer>
-<script src="./js/slider.js"></script>
-<script src="./js/modal.js"></script>
-<script src="./js/main-nav.js"></script>
-<!--<script src="./js/index-scroll-animation.js"></script>-->
+<script src="./js/main-nav.js" defer></script>
+<script src="./js/modal.js" defer></script>
+<script src="./js/slider.js" defer></script>
+
+<script src="./js/map.js"></script>
 </body>
 </html>
