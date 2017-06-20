@@ -7,20 +7,22 @@
 
   @media #{$tablet-widths} {
     margin-bottom: 45px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      left: 0;
-      right: 0;
-      height: 34px;
-      background: url(/img/bg-zigzag-fill.svg) repeat-x center;
-    }
   }
 
   @media #{$desktop-widths} {
     margin-bottom: 70px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .promo::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    height: 34px;
+    background: url(/img/bg-zigzag-fill.svg) repeat-x center;
   }
 }
 
@@ -125,18 +127,17 @@
   @media #{$tablet-widths} {
     @include animation(fadeInLeft);
     animation-delay: 0.8s;
+  }
+}
 
-    &::after {
-      right: 36px;
-      top: 30px;
-    }
+@media #{$tablet-widths} {
 
-    &:hover {
-
-      &::after {
-        top: 25px;
-      }
-    }
+  .promo__link-1::after {
+    right: 36px;
+    top: 30px;
+  }
+  .promo__link-1:hover::after {
+    top: 25px;
   }
 }
 
@@ -176,20 +177,22 @@
   @media #{$tablet-widths} {
     @include animation(fadeInRight);
     animation-delay: 0.8s;
-
-    &::after {
-      right: 34px;
-      top: 31px;
-    }
-
-    &:hover {
-
-      &::after {
-        top: 26px;
-      }
-    }
   }
 }
+
+
+@media #{$tablet-widths} {
+
+  .promo__link-2::after {
+    right: 34px;
+    top: 31px;
+  }
+
+  .promo__link-2:hover::after{
+    top: 26px;
+  }
+}
+
 
 .promo__link-text {
   margin-left: 29px;

@@ -11,13 +11,13 @@
 
   &:hover {
 
-    .footer-social__svg-path {
+    .footer-social__item-svg {
       fill: $green-color;
     }
   }
   &:active {
 
-    .footer-social__svg-path {
+    .footer-social__item-svg {
       fill-opacity: 0.3;
     }
   }
