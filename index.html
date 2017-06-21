@@ -85,7 +85,7 @@
         <div class="main-nav__item-wrapper theme__wrapper">
           <a class="main-nav__item-link main-nav__item-link--basket" href="#">
             <svg class="main-nav__item-svg main-nav__item-svg--basket" width="20" height="19">
-              <use xlink:href="img/sprite-cart.svg#icon-cart"></use>
+              <use xlink:href="./img/sprite-cart.svg#icon-cart"></use>
             </svg>
             <span class="main-nav__item-link-text">Корзина: пока пуста</span>
           </a>
@@ -261,19 +261,19 @@
       <a href="#" class="footer-social__item footer-social__item--insta">
         <span class="footer-social__item-text--hidden">Мы в Инстаграмме</span>
         <svg class="footer-social__item-svg" width="22" height="21">
-          <use xlink:href="img/sprite-social.svg#icon-insta"></use>
+          <use xlink:href="./img/sprite-social.svg#icon-insta"></use>
         </svg>
       </a>
       <a href="#" class="footer-social__item footer-social__item--fb">
         <span class="footer-social__item-text--hidden">Мы в Фейсбуке</span>
         <svg class="footer-social__item-svg" width="22" height="21">
-          <use xlink:href="img/sprite-social.svg#icon-fb"></use>
+          <use xlink:href="./img/sprite-social.svg#icon-fb"></use>
         </svg>
       </a>
       <a href="#" class="footer-social__item footer-social__item--twitter">
         <span class="footer-social__item-text--hidden">Мы в Твиттере</span>
         <svg class="footer-social__item-svg" width="22" height="21">
-          <use xlink:href="img/sprite-social.svg#icon-twitter"></use>
+          <use xlink:href="./img/sprite-social.svg#icon-twitter"></use>
         </svg>
       </a>
     </div>
@@ -291,5 +291,9 @@
 <script src="./js/main-nav.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/slider.js"></script>
+<script>
+  document.querySelector('.contacts__map-wrapper').classList.add('contacts__map-wrapper--hidden');
+</script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0c4d76513e470e5fd21674cbdcf44934150e4500c64c2e2df236fbe284156666&amp;lang=ru_RU&amp;scroll=false&id=map"></script>
 </body>
 </html>
