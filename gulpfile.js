@@ -34,7 +34,7 @@ gulp.task("style", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "/build",
+    server: "./build",
     notify: false,
     open: true,
     cors: true,

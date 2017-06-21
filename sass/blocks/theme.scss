@@ -264,10 +264,12 @@
   border-bottom: 2px solid $black-color;
   padding-top: 10px;
   padding-bottom: 15px;
+
   margin-bottom: 23px;
 
   @media #{$tablet-widths} {
     margin-bottom: 28px;
+    padding-left: 16px;
   }
 }
 
