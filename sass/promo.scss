@@ -62,7 +62,7 @@
 
 .promo__title--inner {
 
-  @media #{$mobile-widths-only} {
+  @media (width: 320px) {
     padding: 0 30px;
   }
 }
