@@ -1,0 +1,39 @@
+.footer-copyright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-copyright__link {
+  @include text-decoration(19px, 18px);
+  font-weight: bold;
+  color: $black-color;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+
+    .footer-copyright__svg-path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    color: rgba($black-color, 0.3);
+
+    .footer-copyright__svg-path {
+      fill-opacity: 0.3;
+    }
+  }
+}
+
+.footer-copyright__text {
+  margin-right: 20px;
+}
+
+.footer-copyright__svg-path {
+  fill: $green-color;
+}

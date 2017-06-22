@@ -35,6 +35,7 @@
   @media #{$tablet-widths} {
     @include text-decoration(19px, 18px);
     background-color: $bg-color;
+    padding-left: 17px;
   }
 }
 

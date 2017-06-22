@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__legend {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form__note {
+  @include text-decoration(14px, 16px);
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    align-self: flex-start;
+  }
+  @media #{$tablet-widths} {
+    @include text-decoration(17px, 30px);
+    margin-bottom: 0;
+
+    order: 1;
+  }
+
+  @media #{$desktop-widths} {
+    order: 1;
+    margin-right: 174px;
+  }
+}
+
+.form__submit {
+  align-self: center;
+  background-color: #fff;
+  padding: 0;
+
+  @media #{$tablet-widths} {
+    width: 230px;
+  }
+  @media #{$desktop-widths} {
+    margin-left: 175px;
+  }
+}

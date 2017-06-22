@@ -1,0 +1,44 @@
+.form-add {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$tablet-widths} {
+    padding-left: 167px;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+}
+
+.form-add__legend {
+  margin-bottom: 24px;
+}
+
+.form-add__to-order {
+  @include text-decoration(17px, 18px);
+  border: 2px solid $black-color;
+  padding: 15px;
+  outline: none;
+  color: $gray-color;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
+}
+
+.form-add__to-order:hover {
+  border: 2px solid $green-color;
+}
+
+.form-add__to-order:focus {
+  border: 2px solid $green-color;
+}
+
+.form-add__to-order::placeholder {
+
+  @media #{$tablet-widths} {
+    @include text-decoration(19px, 18px);
+  }
+}

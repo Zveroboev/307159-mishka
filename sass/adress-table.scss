@@ -1,0 +1,48 @@
+.adress-table {
+
+  tbody {
+    @media #{$tablet-widths} {
+      display: flex;
+    }
+    @media #{$desktop-widths} {
+      flex-direction: column;
+    }
+  }
+}
+
+.adress-table__table-row {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: -2px;
+  }
+}
+
+.adress-table__table-data {
+  @include text-decoration(15px, 30px);
+  min-width: 70px;
+  vertical-align: top;
+  padding-bottom: 27px;
+
+  @media #{$tablet-widths} {
+    @include text-decoration(17px, 30px);
+  }
+}
+
+.adress-table__table-data-inner {
+  border-bottom: 1px solid $green-color;
+  padding-bottom: 4px;
+  cursor: pointer;
+
+  &:hover {
+    color: $green-color;
+  }
+  &:active {
+    color: rgba($green-color, 0.3);
+    border-bottom: 1px solid rgba($green-color, 0.3);
+  }
+}

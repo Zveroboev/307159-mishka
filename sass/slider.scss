@@ -1,0 +1,9 @@
+.slider {
+  @media #{$mobile-widths-only} {
+    margin-bottom: 28px;
+  }
+}
+
+.slider__item--hidden {
+  display: none;
+}
