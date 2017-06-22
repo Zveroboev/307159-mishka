@@ -46,7 +46,7 @@
       position: absolute;
       right: 3px;
       top: -15px;
-      content: url("/img/icon-flag.svg");
+      content: url("../img/icon-flag.svg");
     }
   }
 
@@ -90,7 +90,7 @@
 
   &::before {
     position: absolute;
-    content: url("/img/icon-map-pin.svg");
+    content: url("../img/icon-map-pin.svg");
     top: 36%;
     left: 38%;
     z-index: 1;

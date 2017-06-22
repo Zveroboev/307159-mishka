@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 50%;
+    flex-grow: 1;
   }
   @media #{$desktop-widths} {
     height: auto;
@@ -95,7 +95,7 @@
   }
 }
 
-.catalog-item__svg-path {
+.catalog-item__price-svg {
   fill-opacity: 0.3;
 }
 
@@ -131,16 +131,17 @@
   &:hover {
     color: rgba($black-color, 0.6);
 
-    .catalog-item__svg-path {
+    .catalog-item__price-svg {
       fill-opacity: 1;
       fill: $green-color;
     }
+
   }
 
   &:active {
     color: rgba($black-color, 0.3);
 
-    .catalog-item__svg-path {
+    .catalog-item__price-svg {
       fill-opacity: 0.2;
       fill: $green-color;
     }

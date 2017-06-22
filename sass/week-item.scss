@@ -10,11 +10,11 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -80px;
+      bottom: -100px;
       left: 0;
       right: 0;
       height: 34px;
-      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+      background: url('../img/bg-zigzag-line.svg') repeat-x center;
     }
   }
 
@@ -171,6 +171,6 @@
 
   @media #{$tablet-widths} {
     align-self: flex-start;
-    width: 290px;
+    width: 295px;
   }
 }

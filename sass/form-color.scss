@@ -42,6 +42,7 @@
     margin-bottom: 33px;
     padding-left: 97px;
     padding-top: 15px;
+    margin-right: 9px;
 
     &::before {
       width: 49px;
@@ -82,7 +83,7 @@
 .form-color__inner:checked + .form-color__label {
 
   &::after {
-    content: url("/img/icon-tick-small.svg");
+    content: url("../img/icon-tick-small.svg");
     position: absolute;
     left: 8px;
     top: 6px;
@@ -91,7 +92,7 @@
   @media #{$tablet-widths} {
 
     &::after {
-      content: url("/img/icon-tick.svg");
+      content: url("../img/icon-tick.svg");
       position: absolute;
       left: 28px;
       top: 15px;

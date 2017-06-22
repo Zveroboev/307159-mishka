@@ -3,7 +3,7 @@
   position: relative;
 
   @media #{$tablet-widths} {
-    background: url('/img/review@1x.jpg') left no-repeat;
+    background: url('../img/review@1x.jpg') left no-repeat;
     margin-bottom: 82px;
 
     &::after {
@@ -13,11 +13,11 @@
       left: 0;
       right: 0;
       height: 34px;
-      background: url(/img/bg-zigzag-line.svg) repeat-x center;
+      background: url('../img/bg-zigzag-line.svg') repeat-x center;
     }
 
     @media #{$retina} {
-      background: url('/img/review@2x.jpg') left no-repeat;
+      background: url('../img/review@2x.jpg') left no-repeat;
       background-size: 350px;
     }
   }
@@ -78,7 +78,7 @@
   }
   @media #{$desktop-widths} {
     padding-right: 100px;
-    margin-bottom: 38px;
+    margin-bottom: 29px;
     height: 100px;
   }
 }
@@ -111,11 +111,11 @@
 }
 
 .reviews__pagination-prev {
-  background: url('/img/icon-left-arrow.svg') no-repeat center;
+  background: url('../img/icon-left-arrow.svg') no-repeat center;
 }
 
 .reviews__pagination-next {
-  background: url('/img/icon-right-arrow.svg') no-repeat center;
+  background: url('../img/icon-right-arrow.svg') no-repeat center;
 }
 
 .reviews__write-btn {

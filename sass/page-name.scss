@@ -14,7 +14,7 @@
       left: 0;
       right: 0;
       height: 34px;
-      background: url(/img/bg-zigzag-fill.svg) repeat-x center;
+      background: url('../img/bg-zigzag-fill.svg') repeat-x center;
     }
   }
 
@@ -22,7 +22,7 @@
     margin-bottom: 133px;
 
     &::after {
-      bottom: -23px;
+      bottom: -20px;
     }
   }
 }
